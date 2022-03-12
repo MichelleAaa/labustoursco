@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- roboto condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- source serif pro  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <!-- montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!-- lato thin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+
+    <!-- Hubballi REgular -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- Satisfy font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <!-- great vibes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- courgette -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- itim -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <!-- smooch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+
+    <!-- ARchtects Daughter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <!-- merienda -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+
+    <!-- rock Salt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Nothing you could do -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+    <!-- comic neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
+
+    <!-- LA BELLE AURORE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+    <!-- carattere -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+
+
+    <title>L.A. Bus Tours Co.</title>
+</head>
+<div>
+
+
+
+    <!-- nav and jumbotron Top -->
+    <div class="container-fluid">
+        <div class="sticky-top">
+            <div class="row sticky-nav-dup p-auto d-flex justify-content-center" id="sticky-nav">
+                <!-- navbar -->
+                <div class="col-12 d-flex justify-content-end">
+                    <nav class="navbar navbar-expand-lg navbar-light pt-0">
+                        <a class="navbar-brand" href="index.html"><img src="img/l.a.bustourslogocropped.png" alt=""
+                                height="60" width="60"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Tours
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="citytour.html">City Tour</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Seaside Tour</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="faq.html">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="jumbotron jumbotron-fluid jumbotron-citytour pt-0 mt-0 pr-0 mr-0 mt-0">
+        <div class="center-vertically">
+            <div class="center-vertically-child">
+                <div class="container-fluid">
+                    <div class="row mx-auto d-flex justify-content-center">
+                        <div class="col-12 mx-auto">
+                            <h5 class="jumbotron-title text-nowrap">FAQ</h5>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-11">
+                            <hr class="header-line">
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-10 col-sm-8 col-xl-9 mb-xl-0">
+                            <div>
+                                <h1 class="text-center m-4"> <span class="header-tour-descrip2">Questions and Answers</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
+                            <button type="button" class="btn btn-secondary btn-main">
+                                <a href="#" class="btn-text text-nowrap text-center">Reserve Now &rarr;</a>
+                            </button>
+                        </div>
+                        <p class="my-5"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</header>
+
+<!-- After the jumbotron -->
+<!-- <div class="container-fluid">
+    <div class="row row-content d-flex justify-content-center align-items-center">
+        <div class="col-11 col-md-4 col-lg-3 col-xl-3 text-center about-text mt-2 pt-2 mb-0 pb-0">
+            <img src="img/city-tour-card-hollywood-stars.jpg" alt="" class="img-fluid img-thumbnail d-flex about-img" />
+        </div>
+        <div class="col-11 col-md-8 col-lg-7 col-xl-6 text-left about-text mt-2 pt-2 mb-0 pb-0">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, dolorum excepturi
+                suscipit, illo nesciunt, assumenda eius nulla placeat corrupti recusandae. Minus, id quisquam. Cum
+                necessitatibus eum inventore blanditiis adipisci exercitationem deserunt. Hic placeat quis nulla
+                exercitationem, facilis iure quisquam repellendus nisi eos, aut magnam, rem incidunt nemo inventore
+                dolore.</p>
+        </div>
+    </div>
+    <div class="row pt-3 mx-auto">
+        <div class="col-10 mx-auto">
+            <hr class="">
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="container">
+    <div class="row row-content align-items-center mb-5 mt-5">
+        <div class="col">
+            <div class="media about-text">
+                <img class="mr-3 img-thumbnail media-img align-self-center" src="img/city-tour-card-hollywood-stars.jpg"
+                    alt="Breadcrumb Trail" />
+                <div class="media-body align-self-center">
+                    
+                    <h3 class="mb-3 about-heading-text text-center">Payment</h3>
+                    <div id="accordion">
+                        <div class="card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a data-toggle="collapse" data-target="#test1">
+                                        Test 1</a>
+                                </h4>
+                                <div class="collapse show" id="test1" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="d-none d-sm-block">Text of test 1
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#test2">
+                                        Test 2
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="test2" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="d-none d-sm-block">Text of Test 2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#test3">
+                                        Test 3
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="test3" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="d-none d-sm-block">Text of test 3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="d-flex justify-content-center">
+    <div class="container pl-0 pr-0 ml-0 mr-0">
+        <div class="row">
+            <div class="col mb-0 pb-0">
+                <h3 class="mb-3 about-text about-heading-text text-center">Tours Info</h3>
+            </div>
+        </div>
+        <div class="row mb-5 mt-3 d-flex justify-content-center align-items-center">
+            <div class="col-md-4 d-none d-md-block">
+                <div class="faq-zoom-img-container">
+                    <img class="mr-3 faq-img" src="img/city-tour-card-hollywood-stars.jpg"
+                    alt="Breadcrumb Trail" />
+                </div>
+            </div>
+            <div class="col-10 col-sm-11 col-md-7 about-text">
+                <div class="faq-accordion-size">
+                    <!-- Tours Info section -->
+                    <div class="accordion" id="accordion1">
+                        <div class="card faq-card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a data-toggle="collapse" data-target="#q1">
+                                        Test 1</a>
+                                </h4>
+                                <div class="collapse show" id="q1" data-parent="#accordion1">
+                                    <div class="card-body">
+                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odio sint atque! Molestias distinctio eaque necessitatibus illum, nemo totam quis quas, asperiores laudantium praesentium voluptas!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card faq-card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#q2">
+                                        Test 2
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="q2" data-parent="#accordion1">
+                                    <div class="card-body">
+                                        <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere deserunt eum, magni tempora consequuntur blanditiis voluptatibus sit deleniti asperiores!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card faq-card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#q3">
+                                        Test 3
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="q3" data-parent="#accordion1">
+                                    <div class="card-body">
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste possimus sit, quas eum itaque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-0 pb-0">
+                <h3 class="mb-3 about-text about-heading-text text-center">Boarding</h3>
+            </div>
+        </div>
+        <div class="row mb-5 mt-3 d-flex justify-content-center align-items-center">
+            <div class="col-10 col-sm-11 col-md-7 about-text">
+                <div class="faq-accordion-size">
+                    <!-- Boarding section -->
+                    <div class="accordion" id="accordion2">
+                        <div class="card faq-card-2">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a data-toggle="collapse" data-target="#qb1">
+                                        Test 1</a>
+                                </h4>
+                                <div class="collapse show" id="qb1" data-parent="#accordion2">
+                                    <div class="card-body">
+                                        <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus reprehenderit veritatis eum, voluptatem deleniti suscipit labore voluptate? Laudantium, tempora.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card faq-card-2">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#qb2">
+                                        Test 2
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="qb2" data-parent="#accordion2">
+                                    <div class="card-body">
+                                        <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis cum at fugiat architecto voluptas similique officia, ab sed nisi soluta.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card faq-card-2">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#qb3">
+                                        Test 3
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="qb3" data-parent="#accordion2">
+                                    <div class="card-body">
+                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, eum. Delectus cupiditate excepturi aspernatur atque accusantium numquam?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <div class="faq-zoom-img-container">
+                    <img class="mr-3 faq-img" src="img/city-tour-card-hollywood-stars.jpg" alt="Breadcrumb Trail" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-0 pb-0">
+                <h3 class="mb-3 about-text about-heading-text text-center">Payment</h3>
+            </div>
+        </div>
+        <div class="row mb-5 mt-3 d-flex justify-content-center align-items-center">
+            <div class="col-sm-4 d-none d-md-block">
+                <div class="faq-zoom-img-container">
+                    <img class="mr-3 faq-img" src="img/city-tour-card-hollywood-stars.jpg" alt="Breadcrumb Trail" />
+                </div>
+            </div>
+            <div class="col-10 col-sm-11 col-md-7 about-text">
+                <div class="faq-accordion-size">    
+                    <!-- payment section -->
+                    <div class="accordion" id="accordion3">
+                        <div class="card faq-card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a data-toggle="collapse" data-target="#qp1">
+                                        Test 1</a>
+                                </h4>
+                                <div class="collapse show" id="qp1" data-parent="#accordion3">
+                                    <div class="card-body">
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card faq-card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#qp2">
+                                        Test 2
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="qp2" data-parent="#accordion3">
+                                    <div class="card-body">
+                                        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, repudiandae.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card faq-card">
+                            <div role="tab" class="card-header">
+                                <h4>
+                                    <a class="collapsed" data-toggle="collapse" data-target="#qp3">
+                                        Test 3
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="qp3" data-parent="#accordion3">
+                                    <div class="card-body">
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae nesciunt, sit voluptatibus at in, mollitia modi dolor quia voluptatem, harum dolorum optio! Delectus eaque culpa beatae nisi!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- cards -->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Bus Background Image -->
+<div class="bus-background pt-5">
+    <div class="container-fluid">
+        <div class="row text-center p-0 p-lg-5 ">
+
+            <div class="col-11 col-md-8 col-lg-6 col-xl-4 mx-auto p-0">
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- After the bus picture & Testimonial/review carousel -->
+<footer class="site-footer d-block">
+    <div class="container-fluid">
+        <div class="row px-0 pt-4 d-flex justify-content-center mx-0">
+            <div class="col-5 col-md-4">
+                <div class="d-flex justify-content-start">
+                    <div class="text-left">
+                        <h5 class="footer-title pb-3">Links</h5>
+                        <ul class="list-unstyled footer-item">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="#">City Tour</a></li>
+                            <li><a href="#">Seaside Tour</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 col-sm-4 px-0 mx-0">
+                <div class="d-flex justify-content-end">
+                    <div class="text-right">
+                        <h5 class="footer-title pb-3">Our Location:</h5>
+                        <p class="footer-item">123 Beyond St., Ste 456, </p>
+                        <p class="footer-item p-1">Beverly Hills, CA 90210</p>
+                        <br>
+                        <a role="button" class="contact-links" href="tel:+12345678901"><i
+                                class="fa fa-phone footer-p"></i>
+                            1-234-567-8901</a><br />
+                        <a role="button" class="contact-links" href="mailto:office@labustours.com"><i
+                                class="fa fa-envelope-o footer-p"></i>
+                            office@labustours.com</a><br />
+                        <a role="button" class="contact-links" href="tel:+19876543210"><i
+                                class="fa fa-fax footer-p"></i>
+                            1-987-654-3210</a><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-7">
+                <hr class="">
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-6 text-center pb-2">
+                <a class="btn btn-social-icon btn-instagram m-3" href="http://instagram.com/"><i
+                        class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook m-3" href="http://facebook.com/"><i
+                        class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter m-3" href="http://twitter.com/"><i
+                        class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google m-3" href="http://youtube.com/"><i
+                        class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="row pl-0 ml-0 pb-1">
+            <div class="col-sm-12 pb-1 copyright">
+                <p>&copy; Copyright 2022. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</footer>
+
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+    // for the sticky nav - add background
+
+
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() == 0) {
+                $('#sticky-nav').removeClass('d-background');
+            } else {
+                $('#sticky-nav').addClass('d-background');
+            }
+        });
+    });
+
+// $(function () {
+//     $('.card div h4').mouseover(function (e) {
+//         $(this);
+//         $(this).parent().css('background-color', 'gray');
+//     });
+//     $('.card div h4').mouseout(function (e) {
+//         $(this).parent().css('background-color', 'white');
+//     });
+// });
+
+</script>
+
+</body>
+
+</html>

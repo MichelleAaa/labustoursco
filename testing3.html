@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- roboto condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- source serif pro  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <!-- montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!-- lato thin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+
+
+    <title>L.A. Bus Tours Co.</title>
+</head>
+
+<body>
+
+    <!-- Nav duplicate, for the sticky top, not visible until scrolled -->
+
+    <div class="sticky-top">
+        <div class="row sticky-nav-dup p-auto d-flex justify-content-center" id="sticky-nav">
+            <!-- navbar -->
+            <div class="col-12 d-flex justify-content-end">
+                <nav class="navbar navbar-expand-lg navbar-light pt-0">
+                    <a class="navbar-brand" href="#"><img src="img/l.a.bustourslogocropped.png" alt="" height="60"
+                            width="60"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Our Mission</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Tours
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">L.A. City Tour</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Seaside Tour</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- nav and jumbotron Top       -->
+
+    <header class="jumbotron jumbotron-fluid pt-0 mt-0 pr-0 mr-0">
+        <div class="container-fluid">
+            <!-- Text Content -->
+            <div class="row mx-auto d-flex justify-content-center">
+                <div class="col-md-10 m-5 m-md-3 m-xl-0">
+                    <div class="col-sm-8 col-md-5  my-md-4 my-lg-0 px-xl-2 p-0 mx-auto">
+                        <img src="img/l.a.bustourslogocropped.png" class="img-fluid p-lg-5" />
+                    </div>
+                    <hr class="">
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 col-md-8 ">
+                    <div>
+                        <h1 class="text-center"> <span class="header-tour-descrip">City and Seaside Adventures</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="col pt-4 mt-4 mx-auto text-center">
+                    <!-- <div class="btn header-arrow">
+                            <a href="#" class="header-arrow-text">Tours</a>
+                        </div> -->
+                    <button type="button" class="btn btn-secondary"><a href="#"
+                            class="btn-text text-nowrap text-center">Learn More &rarr;</a></button>
+                </div>
+                <p class="my-5"></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- After the jumbotron -->
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 text-center home-about m-2 p-2">
+                <h1 class="display-4">Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa ex rerum similique dolore!
+                    Possimus quis sit architecto aut, beatae ut accusantium quasi dolore nobis asperiores minima atque
+                    neque eaque?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, dolorum excepturi
+                    suscipit, illo nesciunt, assumenda eius nulla placeat corrupti recusandae. Minus, id quisquam. Cum
+                    necessitatibus eum inventore blanditiis adipisci exercitationem deserunt. Hic placeat quis nulla
+                    exercitationem, facilis iure quisquam repellendus nisi eos, aut magnam, rem incidunt nemo inventore
+                    dolore.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Picture Grid - Using This Method -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <div class="container-fluid home-img-grid">
+                    <div class="row mx-auto px-5 text-center d-flex justify-content-center">
+                        <div class="col-sm-6 col-lg-3 p-lg-1 mx-auto">
+                            <img src="/img/towersla.png" alt="" class="home-img-about home-img-about--1" />
+                        </div>
+                        <div class="col-sm-6 col-lg-3 p-lg-1 mx-auto d-none d-lg-block">
+                            <img src="/img/hollywoodpalm.jpg" alt="" class="home-img-about home-img-about--2" />
+                        </div>
+                        <div class="col-sm-6 col-lg-3 p-lg-1 mx-auto d-none d-sm-block">
+                            <img src="/img/santamonicacropped.png" alt="" class="home-img-about home-img-about--3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bigger grid pictures -->
+    <!-- <div class="container-fluid home-img-grid">
+            <div class="row mx-auto m-5 px-5 text-center d-flex justify-content-center">
+                <div class="col-3 p-1 mx-auto">
+                    <img src="/img/towersla.png" alt="" class="home-img-about home-img-about--1" />
+                </div>
+                <div class="col-3 p-1 mx-auto">
+                    <img src="/img/hollywoodpalm.jpg" alt="" class="home-img-about home-img-about--2" />
+                </div>
+                <div class="col-3 p-1 mx-auto">
+                    <img src="/img/santamonicacropped.png" alt="" class="home-img-about home-img-about--3" />
+                </div>
+            </div>
+        </div> -->
+
+
+    <!-- Picture Grid - Different Method -->
+    <!-- <div class="container-fluid home-img-grid">
+            <div class="row mx-auto my-5">
+                <div class="col-10 home-img-set">
+                    <img src="/img/towersla.png" alt="" class="home-img-set--1" />
+                    <img src="/img/hollywoodpalm.jpg" alt="" class="home-img-set--2" />
+                    <img src="/img/santamonicacropped.png" alt="" class="home-img-set--3" />
+                </div>
+            </div>
+        </div>
+        </div> -->
+
+    <!-- Picture Grid - Different Method -->
+    <!-- <div class="container-fluid home-img-grid">
+            <div class="row mx-auto my-5">
+                <div class="col-4 ">
+                <div class="home-img-set">    
+                    <img src="/img/towersla.png" alt="" class="home-img-set--1" />
+                </div>
+                </div>
+                
+                <div class="col-4 ">
+                    <div class="home-img-set">
+                    <img src="/img/hollywoodpalm.jpg" alt="" class="home-img-set--2" />
+                </div>
+                </div>
+                <div class="col-4 ">
+                    <div class="home-img-set">
+                    <img src="/img/santamonicacropped.png" alt="" class="home-img-set--3" />
+                </div>
+                </div>
+            </div>
+        </div>
+        </div> -->
+
+    <!-- more text here, under the 3 pictures, but above the cards -->
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 text-center home-about m-2 p-2">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus odit itaque molestias
+                    aut omnis eaque quas sint nihil ab earum eligendi repellendus laboriosam velit repudiandae possimus
+                    libero magnam facilis suscipit accusamus, repellat magni. Aliquid facilis temporibus nobis repellat
+                    neque, harum aspernatur ea magnam, in sapiente rerum ex omnis? Reiciendis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam doloremque in reprehenderit, saepe
+                    alias iure incidunt rem quaerat sint ab odio quia sequi dolor dicta, distinctio tempore vitae nisi a
+                    obcaecati nobis, labore omnis minima? Reprehenderit architecto quam eos eaque.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- cards -->
+    <div class="container-fluid">
+        <div class="row mx-auto d-flex justify-content-center">
+            <div class="col-12 col-xl-9">
+
+                <div class="row mx-auto">
+                    <div class="col-12 col-md-5 col-xl-4 mx-auto">
+                        <div class="card">
+                            <img src="/img/card-city.jpg" alt="" class="img-fluid card-img">
+                            <div class="card-header">
+                                <h1>City Tour</h1>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item card-btn"><a href="#" class="">Learn More &rarr;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-xl-4 mx-auto">
+                        <div class="card">
+                            <img src="/img/card-seaside.jpg" alt="" class="img-fluid card-img">
+                            <div class="card-header">
+                                <h1>City Tour</h1>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item card-btn"><a href="#" class="">Learn More &rarr;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- temporary div for spacing -->
+    <!-- <div class="big-height">
+
+    </div> -->
+
+    <!-- Bus Background Image -->
+    <div class="bus-background">
+        <div class="container-fluid">
+            <div class="row carousel-box text-center">
+                <div class="col-10 col-lg-6 carousel-box-child mx-auto">
+                    <div class="carousel slide" id="carousel-reviews" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-reviews" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-reviews" data-slide-to="1"></li>
+                            <li data-target="#carousel-reviews" data-slide-to="2"></li>
+                            <li data-target="#carousel-reviews" data-slide-to="3"></li>
+                        </ol>
+
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="d-block">
+                                    <div class="m-1 mb-3">
+                                        <h2 class="pt-0 display-4">Excellent!</h2>
+                                        <div class="p-1">My rating: <div class="star p-1"><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true">
+                                            </div></i>
+                                        </div>
+                                        <p class="p-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ab
+                                            repudiandae labore
+                                            consequuntur reprehenderit, hic, vitae mollitia voluptatibus nihil accusamus
+                                            eveniet
+                                            tenetur? Eius, eum debitis!</p>
+                                    </div>
+                                    <div class="p-1">
+                                        <i>Terrance from Salt Lake City, UT</i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item p-2">
+                                <div class="d-block">
+                                    <div class="m-1 mb-3">
+                                        <h2 class="pt-0 display-4">Excellent!</h2>
+                                        <div class="p-1">My rating: <div class="star text-dark p-1"><i
+                                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true">
+                                            </div></i>
+                                        </div>
+                                        <p class="p-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ab
+                                            repudiandae labore
+                                            consequuntur reprehenderit, hic, vitae mollitia voluptatibus nihil accusamus
+                                            eveniet
+                                            tenetur? Eius, eum debitis!</p>
+                                    </div>
+                                    <div class="p-1">
+                                        <i>Jessica from Boulder, CO</i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item p-2">
+                                <div class="d-block">
+                                    <div class="m-1 mb-3">
+                                        <h2 class="pt-0 display-4">Excellent!</h2>
+                                        <div class="p-1">My rating: <div class="star text-dark p-1"><i
+                                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true">
+                                            </div></i>
+                                        </div>
+                                        <p class="p-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ab
+                                            repudiandae labore
+                                            consequuntur reprehenderit, hic, vitae mollitia voluptatibus nihil accusamus
+                                            eveniet
+                                            tenetur? Eius, eum debitis!</p>
+                                    </div>
+                                    <div class="p-1">
+                                        <i>Jerry from Columbus, OH</i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item p-2">
+                                <div class="d-block">
+                                    <div class="m-1 mb-3">
+                                        <h2 class="pt-0 display-4">Excellent!</h2>
+                                        <div class="p-1">My rating: <div class="star text-dark p-1"><i
+                                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true">
+                                            </div></i>
+                                        </div>
+                                        <p class="p-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ab
+                                            repudiandae labore
+                                            consequuntur reprehenderit, hic, vitae mollitia voluptatibus nihil accusamus
+                                            eveniet
+                                            tenetur? Eius, eum debitis!</p>
+                                    </div>
+                                    <div class="p-1">
+                                        <i>Tina from New York City, NY</i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carousel-reviews" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-reviews" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- After the bus picture: Testimonial/review carousel -->
+
+    <footer class="site-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>testing</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="container-fluid"> -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-6 text-center">
+                    <a class="btn btn-social-icon btn-instagram m-3" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook m-3" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter m-3" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google m-3" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // $(function () {
+        //         $(window).scroll(function () {
+        //             if ($(this).scrollTop() == 0) {
+        //                 $('#stickyNav').hide();
+        //             } else {
+        //                 $('#stickyNav').show();
+        //             }
+        //         });
+        //     })
+
+        // for the sticky nav
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() == 0) {
+                    $('#sticky-nav').removeClass('d-background');
+                } else {
+                    $('#sticky-nav').addClass('d-background');
+                }
+            });
+        })
+
+        //     $(function () {
+        //         $(window).scroll(function () {
+        //             if ($(this).scrollTop() == 0) {
+        //                 $('#outer-container').addClass('outer-container');
+        //             } else {
+        //                 $('#outer-container').removeClass('outer-container');
+        //             }
+        //         });
+        //     })
+
+        //     $(function () {
+        //         $(window).scroll(function () {
+        //             if ($(this).scrollTop() == 0) {
+        //                 $('#sticky-nav').removeClass('d-background');
+        //                 $('#outer-container').addClass('outer-container');
+        //                 $('#inner-container').addClass('inner-container');
+        //             } else {
+        //                 $('#sticky-nav').addClass('d-background');
+        //                 $('#outer-container').removeClass('outer-container');
+        //                 $('#inner-container').removeClass('inner-container');
+        //             }
+        //         });
+        //     })
+
+
+        //     $(function () {
+        //     $(window).scroll(function () {
+        //         if ($(this).scrollTop() == 0) {
+        //             $('#inner-container').addClass('inner-container');
+        //         } else {
+        //             $('#inner-container').removeClass('inner-container');
+        //         }
+        //     });
+        // })
+
+
+            // $(function () {
+            //     $(window).scroll(function () {
+            //         if ($(this).scrollTop() == 0) {
+            //             $('#sticky-nav').removeClass('d-background');
+            //             $('#outer-container').addClass('outer-container');
+            //             $('#inner-container').addClass('inner-container');
+            //         } else {
+            //             $('#sticky-nav').addClass('d-background');
+            //             $('#outer-container').removeClass('outer-container');
+            //             $('#inner-container').removeClass('inner-container');
+            //         }
+            //     });
+            // })
+
+
+
+
+
+
+
+        // < div class="outer-container" id = "outer-container" >
+        //     <div class="inner-container" id="inner-container">
+
+
+        // for the non-sticky nav
+            // $(function () {
+            //     $(window).scroll(function () {
+            //         if ($(this).scrollTop() == 0) {
+            //             $('#non-sticky-nav').removeClass('d-none');
+            //         } else {
+            //             $('#non-sticky-nav').addClass('d-none');
+            //         }
+            //     });
+            // })
+
+        // window.onscroll = function () {
+        //         var top = document.body.scrollTop + document.documentElement.scrollTop == 0;
+        //         // document.getElementById('topbar').style.display = top ? 'block' : 'none';
+        //         document.getElementById('#stickyNav').style.display = top ? 'none' : 'block';
+        //     };
+    </script>
+
+</body>
+
+</html>
