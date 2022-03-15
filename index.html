@@ -216,8 +216,8 @@
                                 </div>
                             </div>
                         </div> -->
-                            <div class="col-6">
-                                <h5 class="jumbotron-title text-center text-nowrap"> <span class="jumbotron-la"> L.A </span>Bus Tours</h5>
+                            <div class="col-11 col-sm-6 ml-0 pl-0">
+                                <h5 class="jumbotron-title text-center text-nowrap "> <span class="jumbotron-la"> L.A </span>Bus Tours</h5>
                             </div>
                     </div>
                     </div>
@@ -247,6 +247,68 @@
         </div>  
     </div>
 </header>
+
+<div id="bookingModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title text-center">Book a Tour</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="row form-group">
+                            <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of
+                                Passengers</label>
+                            <div class="col">
+                                <input type="number" class="form-control form-control-sm" id="num-passengers"
+                                    placeholder="">
+                            </div>
+                        </div>
+                </div>
+                <div class="row form-group">
+                    <label for="date" class="col col-sm-6 col-form-label modal-text">Date:</label>
+                    <div class="col-12 col-sm-6">
+                        <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-sm-6 col-form-label modal-text">Tour Type:</label>
+                    <fieldset id="tourType">
+                        <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn radio-btn-1 active text-nowrap">
+                                <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked> City
+                                Tour
+                            </label>
+                            <label class="btn radio-btn-2 text-nowrap">
+                                <input type="radio" name="tourType" autocomplete="off" value="seasideTour"> Seaside Tour
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="row form-group">
+                    <label class="col-sm-6 col-form-label modal-text">Extras:</label>
+                    <div class="col-6 btn-group">
+                        <div class="input-group-text checkbox-container">
+                            <input type="checkbox" aria-label="Checkbox for following text input" name="celebTour"
+                                value="Yes">
+                            <label for="celebTour" class="pl-3">+ 2-Hour Celebrity Tour</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group pt-3">
+                    <div class="col">
+                        <button type="submit" data-dismiss="modal" class="btn-modal btn-modal-cancel">Cancel</button>
+                        <button type="submit" class="btn-modal btn-modal-submit">Search</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
     <!-- After the jumbotron -->
 <div class="container-fluid">
@@ -371,7 +433,7 @@
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="col-5">
                             <div class="card-link-bottom">
-                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#bookingModal">Book Now</a>
                             </div>
                         </div>
                         <div class="col-6">
@@ -400,7 +462,7 @@
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="col-5">
                             <div class="card-link-bottom">
-                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#bookingModal">Book Now</a>
                             </div>
                         </div>
                         <div class="col-6">
@@ -409,9 +471,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
-                
+                </div>
             </div>
         </div>
     </div>

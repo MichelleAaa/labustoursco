@@ -134,7 +134,7 @@
 
     <title>L.A. Bus Tours Co.</title>
 </head>
-<div>
+<!-- <div> -->
 
 
 
@@ -209,7 +209,7 @@
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
-                    <button type="button" class="btn btn-secondary btn-main">
+                    <button type="button" class="btn btn-secondary btn-main" data-toggle="modal" data-target="#bookingModal">
                         <a href="#" class="btn-text text-nowrap text-center">Reserve Now &rarr;</a>
                     </button>
                 </div>
@@ -343,22 +343,21 @@
 
     <!-- Picture Grid - Using This Method -->
     <div class="gradient-background">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-8 mx-auto mt-0 pt-0 text-center">
-                <div>
-                    <div class="tour-details-box home-about">
-                <h1 class="display-4">Optional 2-Hour Celebrity Homes Tour</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo saepe quidem fugit earum, a nemo excepturi illum, consectetur natus beatae cum iste, fuga ratione possimus error labore deserunt nostrum!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit libero odio harum quidem praesentium ducimus quae minus quibusdam alias! At libero sit pariatur nobis error cupiditate, obcaecati voluptas.</p>
-                </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8 mx-auto mt-0 pt-0 text-center">
+                    <div>
+                        <div class="tour-details-box home-about">
+                            <h1 class="display-4">Optional 2-Hour Celebrity Homes Tour</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo saepe quidem fugit earum, a nemo excepturi illum, consectetur natus beatae cum iste, fuga ratione possimus error labore deserunt nostrum!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit libero odio harum quidem praesentium ducimus quae minus quibusdam alias! At libero sit pariatur nobis error cupiditate, obcaecati voluptas.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 
- 
 
     <!-- more text here, under the 3 pictures, but above the cards -->
     <div class="container-fluid">
@@ -408,98 +407,156 @@
         </div>
         <div class="row d-flex justify-content-center">
             <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
-                    <button type="button" class="btn btn-secondary btn-main">
+                    <button type="button" id="reserveOpenModal" class="btn btn-secondary btn-main" data-toggle="modal" data-target="#bookingModal">
                         <a href="#" class="btn-text text-nowrap text-center">Reserve Now &rarr;</a>
                     </button>
             </div>
+        </div>
     </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
 
-    <!-- Bus Background Image -->
-    <div class="bus-background pt-5">
-        <div class="container-fluid">
-            <div class="row text-center p-0 p-lg-5 ">
-
-                <div class="col-11 col-md-8 col-lg-6 col-xl-4 mx-auto p-0">
-                   
-
-
+    <div id="bookingModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center">Book a Tour</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="row form-group">
+                                <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of Passengers</label>
+                                <div class="col">
+                                    <input type="number" class="form-control form-control-sm" id="num-passengers" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="date" class="col col-sm-6 col-form-label modal-text">Date:</label>
+                                <div class="col-12 col-sm-6">
+                                    <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label modal-text">Tour Type:</label>
+                                <fieldset id="tourType">
+                                    <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn radio-btn-1 active text-nowrap">
+                                            <input type="radio" name="tourType" autocomplete="off" value="cityTour"
+                                                checked> City Tour
+                                        </label>
+                                        <label class="btn radio-btn-2 text-nowrap">
+                                            <input type="radio" name="tourType"  autocomplete="off" value="seasideTour"> Seaside Tour
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label modal-text">Extras:</label>
+                                <div class="col-6 btn-group">
+                                    <div class="input-group-text checkbox-container">
+                                        <input type="checkbox" aria-label="Checkbox for following text input" name="celebTour" value="Yes">
+                                        <label for="celebTour" class="pl-3">+ 2-Hour Celebrity Tour</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group pt-3">
+                                <div class="col">
+                                    <button type="submit" data-dismiss="modal" class="btn-modal btn-modal-cancel">Cancel</button>
+                                    <button type="submit" class="btn-modal btn-modal-submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
-    <!-- After the bus picture & Testimonial/review carousel -->
-    <footer class="site-footer d-block">
-        <div class="container-fluid">
-            <div class="row px-0 pt-4 d-flex justify-content-center mx-0">
-                <div class="col-5 col-md-4">
-                    <div class="d-flex justify-content-start">
-                        <div class="text-left">
-                            <h5 class="footer-title pb-3">Links</h5>
-                            <ul class="list-unstyled footer-item">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="aboutus.html">About</a></li>
-                                <li><a href="citytour.html">City Tour</a></li>
-                                <li><a href="#">Seaside Tour</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="contactus.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-7 col-sm-4 px-0 mx-0">
-                    <div class="d-flex justify-content-end">
-                        <div class="text-right">
-                            <h5 class="footer-title pb-3">Our Location:</h5>
-                            <p class="footer-item">123 Beyond St., Ste 456, </p>
-                            <p class="footer-item p-1">Beverly Hills, CA 90210</p>
-                            <br>
-                            <a role="button" class="contact-links" href="tel:+12345678901"><i class="fa fa-phone footer-p"></i>
-                                1-234-567-8901</a><br />
-                            <a role="button" class="contact-links" href="mailto:office@labustours.com"><i class="fa fa-envelope-o footer-p"></i>
-                                office@labustours.com</a><br />
-                            <a role="button" class="contact-links" href="tel:+19876543210"><i class="fa fa-fax footer-p"></i>
-                                1-987-654-3210</a><br />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-7">
-                    <hr class="">
-                </div>
-            </div>
+    <br>
+    <br>
+    <br>
+    <br>
 
-            <div class="row d-flex justify-content-center">
-                <div class="col-sm-6 text-center pb-2">
-                    <a class="btn btn-social-icon btn-instagram m-3" href="http://instagram.com/"><i
-                            class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook m-3" href="http://facebook.com/"><i
-                            class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter m-3" href="http://twitter.com/"><i
-                            class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google m-3" href="http://youtube.com/"><i
-                            class="fa fa-youtube"></i></a>
+<!-- Bus Background Image -->
+<div class="bus-background pt-5">
+    <div class="container-fluid">
+        <div class="row text-center p-0 p-lg-5 ">
+            <div class="col-11 col-md-8 col-lg-6 col-xl-4 mx-auto p-0">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- After the bus picture & Testimonial/review carousel -->
+<footer class="site-footer d-block">
+    <div class="container-fluid">
+        <div class="row px-0 pt-4 d-flex justify-content-center mx-0">
+            <div class="col-5 col-md-4">
+                <div class="d-flex justify-content-start">
+                    <div class="text-left">
+                        <h5 class="footer-title pb-3">Links</h5>
+                        <ul class="list-unstyled footer-item">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="citytour.html">City Tour</a></li>
+                            <li><a href="#">Seaside Tour</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="row pl-0 ml-0 pb-1">
-                <div class="col-sm-12 pb-1 copyright">
-                    <p>&copy; Copyright 2022. All Rights Reserved.</p>
+            <div class="col-7 col-sm-4 px-0 mx-0">
+                <div class="d-flex justify-content-end">
+                    <div class="text-right">
+                        <h5 class="footer-title pb-3">Our Location:</h5>
+                        <p class="footer-item">123 Beyond St., Ste 456, </p>
+                        <p class="footer-item p-1">Beverly Hills, CA 90210</p>
+                        <br>
+                        <a role="button" class="contact-links" href="tel:+12345678901"><i
+                                class="fa fa-phone footer-p"></i>
+                            1-234-567-8901</a><br />
+                        <a role="button" class="contact-links" href="mailto:office@labustours.com"><i
+                                class="fa fa-envelope-o footer-p"></i>
+                            office@labustours.com</a><br />
+                        <a role="button" class="contact-links" href="tel:+19876543210"><i
+                                class="fa fa-fax footer-p"></i>
+                            1-987-654-3210</a><br />
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-7">
+                <hr class="">
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-6 text-center pb-2">
+                <a class="btn btn-social-icon btn-instagram m-3" href="http://instagram.com/"><i
+                        class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook m-3" href="http://facebook.com/"><i
+                        class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter m-3" href="http://twitter.com/"><i
+                        class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google m-3" href="http://youtube.com/"><i
+                        class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="row pl-0 ml-0 pb-1">
+            <div class="col-sm-12 pb-1 copyright">
+                <p>&copy; Copyright 2022. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
 
 
 
-    </footer>
+</footer>
+
 
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
