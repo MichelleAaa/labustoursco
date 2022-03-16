@@ -129,17 +129,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
 
 
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="css/styles.css" />
 
 
     <title>L.A. Bus Tours Co.</title>
 </head>
 <div>
-
-    <!-- Nav duplicate, for the sticky top, not visible until scrolled -->
-
-
-
 
     <!-- nav and jumbotron Top -->
 <div class="container-fluid">
@@ -150,14 +145,11 @@
                 <nav class="navbar navbar-expand-lg navbar-light pt-0">
                     <a class="navbar-brand align-self-start" href="index.html"><img src="img/l.a.bustourslogocropped.png" alt="" height="60"
                             width="60"></a>
-                       <!-- <span class="text-center text-nowrap navbar-la-title">L.A. Bus Tours </span> -->
-                       <!-- <span class="navbar-icon-title pr-1">Tours </span>  -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
@@ -174,7 +166,7 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="citytour.html">City Tour</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Seaside Tour</a>
+                                    <a class="dropdown-item" href="seasidetour.html">Seaside Tour</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -191,16 +183,6 @@
     </div>
 </div>
 
-<!-- <header class="jumbotron jumbotron-fluid jumbotron-home pt-0 mt-0 pr-0 mr-0 mt-0">
-    <div class="container-fluid pt-5">
-        <div class="row mx-auto d-flex justify-content-center">
-            <div class="col-md-10 mt-0 pt-xl-0 pt-xl-0">
-                <div class="col-sm-8 col-md-6 col-xl-5 my-md-2 my-lg-2 px-xl-5 pt-5 mx-auto">
-                    <img src="img/l.a.bustourslogocropped.png" class="img-fluid pt-5" />
-                </div>
-                <hr class="">
-            </div>
-        </div> -->
 <header class="jumbotron jumbotron-fluid jumbotron-citytour pt-0 mt-0 pr-0 mr-0 mt-0">
     <div class="center-vertically">
         <div class="center-vertically-child">
@@ -209,17 +191,10 @@
                 <div class="row mx-auto d-flex justify-content-center">
                     <div class="col-11 mx-auto">
                         <div class="d-flex justify-content-start text-center">
-                        <!-- <div class="row">
-                            <div class="col-4 col-md-2">
-                                <div class="la-container d-flex justify-content-center align-items-center">
-                                    <h5 class="">L.A.</h5>
-                                </div>
-                            </div>
-                        </div> -->
                             <div class="col-11 col-sm-6 ml-0 pl-0">
                                 <h5 class="jumbotron-title text-center text-nowrap "> <span class="jumbotron-la"> L.A </span>Bus Tours</h5>
                             </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -229,7 +204,7 @@
                     </div>
                 </div>
         <div class="row d-flex justify-content-center">
-            <div class="col-8 col-md-8 col-xl-10 mb-xl-0">
+            <div class="col-11 col-md-8 col-xl-10 mb-xl-0">
                 <div>
                     <h1 class="text-center m-4"> <span class="header-tour-descrip">City and Seaside Adventures in the Los Angeles Area</span></h1>
                 </div>
@@ -237,9 +212,6 @@
         </div>
         <div class="row d-flex justify-content-center">
             <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
-                <!-- <div class="btn header-arrow">
-                                    <a href="#" class="header-arrow-text">Tours</a>
-                                </div> -->
                 <button type="button" class="btn btn-secondary btn-main"><a href="#home-card" class="btn-text text-nowrap text-center">Learn More
                         &rarr;</a></button>
             </div>
@@ -263,58 +235,58 @@
                                 Passengers</label>
                             <div class="col">
                                 <input type="number" class="form-control form-control-sm" id="num-passengers"
-                                    placeholder="">
+                                placeholder="">
                             </div>
                         </div>
-                </div>
-                <div class="row form-group">
-                    <label for="date" class="col col-sm-6 col-form-label modal-text">Date:</label>
-                    <div class="col-12 col-sm-6">
-                        <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <label class="col-sm-6 col-form-label modal-text">Tour Type:</label>
-                    <fieldset id="tourType">
-                        <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn radio-btn-1 active text-nowrap">
-                                <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked> City
-                                Tour
-                            </label>
-                            <label class="btn radio-btn-2 text-nowrap">
-                                <input type="radio" name="tourType" autocomplete="off" value="seasideTour"> Seaside Tour
-                            </label>
+                        <!-- </div> -->
+                        <div class="row form-group">
+                            <label for="date" class="col col-sm-6 col-form-label modal-text">Date:</label>
+                            <div class="col-12 col-sm-6">
+                                <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
+                            </div>
                         </div>
-                    </fieldset>
-                </div>
-                <div class="row form-group">
-                    <label class="col-sm-6 col-form-label modal-text">Extras:</label>
-                    <div class="col-6 btn-group">
-                        <div class="input-group-text checkbox-container">
-                            <input type="checkbox" aria-label="Checkbox for following text input" name="celebTour"
-                                value="Yes">
-                            <label for="celebTour" class="pl-3">+ 2-Hour Celebrity Tour</label>
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label modal-text">Tour Type:</label>
+                            <fieldset id="tourType">
+                                <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn radio-btn-1 active text-nowrap">
+                                        <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked> City
+                                        Tour
+                                    </label>
+                                    <label class="btn radio-btn-2 text-nowrap">
+                                        <input type="radio" name="tourType" autocomplete="off" value="seasideTour"> Seaside Tour
+                                    </label>
+                                </div>
+                            </fieldset>
                         </div>
-                    </div>
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label modal-text">Extras:</label>
+                            <div class="col-6 btn-group">
+                                <div class="input-group-text checkbox-container">
+                                    <input type="checkbox" aria-label="Checkbox for following text input" name="celebTour"
+                                        value="Yes">
+                                    <label for="celebTour" class="pl-3">+ 2-Hour Celebrity Tour</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group pt-3">
+                            <div class="col">
+                                <button type="submit" data-dismiss="modal" class="btn-modal btn-modal-cancel">Cancel</button>
+                                <button type="submit" class="btn-modal btn-modal-submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="row form-group pt-3">
-                    <div class="col">
-                        <button type="submit" data-dismiss="modal" class="btn-modal btn-modal-cancel">Cancel</button>
-                        <button type="submit" class="btn-modal btn-modal-submit">Search</button>
-                    </div>
-                </div>
-                </form>
             </div>
         </div>
     </div>
-</div>
 </div>
 
     <!-- After the jumbotron -->
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
-        <div class="col-8 text-center home-about mt-2 pt-2 mb-0 pb-0">
-            <h1 class="display-4">Lorem ipsum dolor sit amet</h1>
+        <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-0 pb-0">
+            <h1 class="display-4">The Best Bus Tours in L.A.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa ex rerum similique dolore! Possimus
                 quis sit architecto aut, beatae ut accusantium quasi dolore nobis asperiores minima atque neque eaque?
             </p>
@@ -322,12 +294,13 @@
                 suscipit, illo nesciunt, assumenda eius nulla placeat corrupti recusandae. Minus, id quisquam. Cum
                 necessitatibus eum inventore blanditiis adipisci exercitationem deserunt. Hic placeat quis nulla
                 exercitationem, facilis iure quisquam repellendus nisi eos, aut magnam, rem incidunt nemo inventore
-                dolore.</p>
+                dolore.
+            </p>
         </div>
     </div>
 </div>
 
-<!-- Picture Grid - Using This Method -->
+<!-- Three Pictures -->
 <div class="container-fluid">
     <div class="row">
         <div class="col-11 mx-auto home-img-grid mt-0 pt-0">
@@ -346,62 +319,11 @@
     </div>
 </div>
 
-    <!-- Bigger grid pictures -->
-        <!-- <div class="container-fluid home-img-grid">
-            <div class="row mx-auto m-5 px-5 text-center d-flex justify-content-center">
-                <div class="col-3 p-1 mx-auto">
-                    <img src="/img/towersla.png" alt="" class="home-img-about home-img-about--1" />
-                </div>
-                <div class="col-3 p-1 mx-auto">
-                    <img src="/img/hollywoodpalm.jpg" alt="" class="home-img-about home-img-about--2" />
-                </div>
-                <div class="col-3 p-1 mx-auto">
-                    <img src="/img/santamonicacropped.png" alt="" class="home-img-about home-img-about--3" />
-                </div>
-            </div>
-        </div> -->
-
-
-        <!-- Picture Grid - Different Method -->
-        <!-- <div class="container-fluid home-img-grid">
-            <div class="row mx-auto my-5">
-                <div class="col-10 home-img-set">
-                    <img src="/img/towersla.png" alt="" class="home-img-set--1" />
-                    <img src="/img/hollywoodpalm.jpg" alt="" class="home-img-set--2" />
-                    <img src="/img/santamonicacropped.png" alt="" class="home-img-set--3" />
-                </div>
-            </div>
-        </div>
-        </div> -->
-
-        <!-- Picture Grid - Different Method -->
-        <!-- <div class="container-fluid home-img-grid">
-            <div class="row mx-auto my-5">
-                <div class="col-4 ">
-                <div class="home-img-set">    
-                    <img src="/img/towersla.png" alt="" class="home-img-set--1" />
-                </div>
-                </div>
-                
-                <div class="col-4 ">
-                    <div class="home-img-set">
-                    <img src="/img/hollywoodpalm.jpg" alt="" class="home-img-set--2" />
-                </div>
-                </div>
-                <div class="col-4 ">
-                    <div class="home-img-set">
-                    <img src="/img/santamonicacropped.png" alt="" class="home-img-set--3" />
-                </div>
-                </div>
-            </div>
-        </div>
-        </div> -->
-
     <!-- more text here, under the 3 pictures, but above the cards -->
 <div class="container-fluid pt-5" id="home-card">
     <div class="row d-flex justify-content-center">
-        <div class="col-8 text-center home-about mt-2 pt-2 mb-5 pb-5">
-            <h1 class="display-4">Lorem ipsum dolor sit amet.</h1>
+        <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-5 pb-5">
+            <h1 class="display-4">About Our Tours</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus odit itaque molestias aut
                 omnis eaque quas sint nihil ab earum eligendi repellendus laboriosam velit repudiandae possimus libero
                 magnam facilis suscipit accusamus, repellat magni. Aliquid facilis temporibus nobis repellat neque,
@@ -417,7 +339,7 @@
 <div class="container-fluid">
     <div class="row d-flex justify-content-center py-5">
         <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-3 px-5 pl-xl-0 pb-5 pb-md-0">
-            <div class="card home-card">
+            <div class="card home-card mb-5">
                 <img src="/img/lacropped.jpg" alt="" class="img-fluid card-img">
                 <div class="card-body">
                     <h5 class="card-title">City Tour</h5>
@@ -438,7 +360,7 @@
                         </div>
                         <div class="col-6">
                             <div class="card-link-bottom">
-                                <a href="#" class="card-link">Learn More &rarr;</a>
+                                <a href="citytour.html" class="card-link">Learn More &rarr;</a>
                             </div>
                         </div>
                     </div>
@@ -486,8 +408,7 @@
 <div class="bus-background pt-5">
     <div class="container-fluid">
         <div class="row carousel-box comment-bottom text-center p-0 p-lg-5 ">
-            <div class="col-11 col-md-8 col-lg-6 col-xl-4 carousel-box-child mx-auto p-0">
-                <!-- added comment-box-co and comment-box to try to center text. -->
+            <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-4 carousel-box-child mx-auto p-0">
                 <div class="comment-box-countainer">
                     <div class="comment-box">
                         <div class="carousel slide pb-5 px-5" id="carousel-reviews" data-ride="carousel">
@@ -521,8 +442,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div class="carousel-item">
                                     <div class="d-block">
                                         <div class="m-0 m-md-1 mb-3 pt-0">
@@ -545,7 +464,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="carousel-item">
                                     <div class="d-block">
                                         <div class="m-0 m-md-1 mb-3 pt-0">
@@ -568,7 +486,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="carousel-item">
                                     <div class="d-block">
                                         <div class="m-0 m-md-1 mb-3 pt-0">
@@ -608,7 +525,6 @@
     </div>
 </div>
 
-    <!-- After the bus picture & Testimonial/review carousel -->
 <footer class="site-footer d-block">
     <div class="container-fluid">
         <div class="row px-0 pt-4 d-flex justify-content-center mx-0">
@@ -620,14 +536,14 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutus.html">About</a></li>
                     <li><a href="citytour.html">City Tour</a></li>
-                    <li><a href="#">Seaside Tour</a></li>
+                    <li><a href="seasidetour.html">Seaside Tour</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
             </div>
             </div>
             </div>
-            <div class="col-7 col-sm-4 px-0 mx-0">
+            <div class="col-7 col-sm-5 pl-0 ml-0 pr-3">
                 <div class="d-flex justify-content-end">
                     <div class="text-right">
                         <h5 class="footer-title pb-3">Our Location:</h5>
@@ -649,7 +565,6 @@
                 <hr class="">
             </div>
         </div>
-
         <div class="row d-flex justify-content-center">
             <div class="col-sm-6 text-center pb-2">
                 <a class="btn btn-social-icon btn-instagram m-3" href="http://instagram.com/"><i
@@ -668,31 +583,13 @@
             </div>
         </div>
     </div>
-
-        
-
 </footer>
 
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<script>
-    // for the sticky nav - add background
-
-    $(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() == 0) {
-                    $('#sticky-nav').removeClass('d-background');
-                } else {
-                    $('#sticky-nav').addClass('d-background');
-                }
-            });
-        });
-        
-</script>
+    <script src="js/scripts.js"></script>   
 
 </body>
 </html>

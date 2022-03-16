@@ -129,7 +129,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
 
     <title>L.A. Bus Tours Co.</title>
@@ -169,7 +169,7 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="citytour.html">City Tour</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Seaside Tour</a>
+                                        <a class="dropdown-item" href="seasidetour.html">Seaside Tour</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
@@ -201,7 +201,7 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class="col-10 col-sm-8 col-xl-9 mb-xl-0">
+                <div class="col-11 col-sm-8 col-xl-9 mb-xl-0">
                     <div>
                         <h1 class="text-center m-4"> <span class="header-tour-descrip2">Downtown L.A., Santa Monica, Hollywood, and Beverly Hills</span></h1>
                     </div>
@@ -221,10 +221,75 @@
         </div>
     </header>
 
+    <div id="bookingModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center">Book a Tour</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="row form-group">
+                                <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of
+                                    Passengers</label>
+                                <div class="col">
+                                    <input type="number" class="form-control form-control-sm" id="num-passengers"
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <div class="row form-group">
+                                <label for="date" class="col col-sm-6 col-form-label modal-text">Date:</label>
+                                <div class="col-12 col-sm-6">
+                                    <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label modal-text">Tour Type:</label>
+                                <fieldset id="tourType">
+                                    <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn radio-btn-1 active text-nowrap">
+                                            <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked>
+                                            City
+                                            Tour
+                                        </label>
+                                        <label class="btn radio-btn-2 text-nowrap">
+                                            <input type="radio" name="tourType" autocomplete="off" value="seasideTour">
+                                            Seaside Tour
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label modal-text">Extras:</label>
+                                <div class="col-6 btn-group">
+                                    <div class="input-group-text checkbox-container">
+                                        <input type="checkbox" aria-label="Checkbox for following text input"
+                                            name="celebTour" value="Yes">
+                                        <label for="celebTour" class="pl-3">+ 2-Hour Celebrity Tour</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group pt-3">
+                                <div class="col">
+                                    <button type="submit" data-dismiss="modal"
+                                        class="btn-modal btn-modal-cancel">Cancel</button>
+                                    <button type="submit" class="btn-modal btn-modal-submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- After the jumbotron -->
     <div class="container-fluid">
         <div class="row d-flex justify-content-center">
-            <div class="col-8 text-center home-about mt-2 pt-2 mb-0 pb-0">
+            <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-0 pb-0">
                 <h1 class="display-4">Lorem ipsum dolor sit amet</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa ex rerum similique dolore!
                     Possimus
@@ -243,11 +308,11 @@
     <!-- cards -->
     <div class="container">
         <div class="row d-flex justify-content-center py-5 px-2">
-            <div class="col-10 col-md-4 col-xl-3 m-0 p-0 px-md-2 py-5">
+            <div class="col-9 col-sm-8 col-md-5 col-lg-4 col-xl-3 m-0 p-0 px-md-2 py-5">
                 <div class="card card-tour">
                     <img src="/img/city-tour-card-beverly-hills.jpg" alt="" class="img-fluid card-img-tour">
                     <div class="card-body">
-                        <h5 class="card-title">Shopping and Dining</h5>
+                        <h5 class="card-title">Tons of Stops</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's
                             content.</p>
@@ -259,21 +324,16 @@
                     </ul>
                     <div class="card-body">
                         <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-5">
-                                <div class="card-link-bottom">
-                                    <a href="#" class="card-link">Card link</a>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="card-link-bottom">
-                                    <a href="#" class="card-link">Learn More &rarr;</a>
+                            <div class="col-10">
+                                <div class="card-link-bottom text-center">
+                                    <a href="#stops" class="card-link">Learn More About the Tour Schedule &rarr;</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-10 col-md-4 col-xl-3 m-0 p-0 px-md-2 py-5">
+            <div class="col-9 col-sm-7 col-md-5 col-lg-4 col-xl-3 m-0 p-0 px-md-2 py-5">
                 <div class="card card-tour">
                     <img src="/img/citytourbanner.jpg" alt="" class="img-fluid card-img-tour">
                     <div class="card-body">
@@ -289,28 +349,21 @@
                     </ul>
                     <div class="card-body">
                         <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-5">
-                                <div class="card-link-bottom">
-                                    <a href="#" class="card-link">Card link</a>
-                                </div>
-                            </div>
                             <div class="col-6">
                                 <div class="card-link-bottom">
-                                    <a href="#" class="card-link">Learn More &rarr;</a>
+                                    <a href="#" class="card-link" data-toggle="modal" data-target="#bookingModal">Book the City Tour Now &rarr;</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-10 col-md-4 col-xl-3 m-0 p-0 px-md-2 py-5">
+            <div class="col-9 col-sm-7 col-md-5 col-lg-4 col-xl-3 m-0 p-0 px-md-2 py-5">
                 <div class="card card-tour">
                     <img src="/img/city-tour-card-palms.jpg" alt="" class="img-fluid card-img-tour">
                     <div class="card-body">
-                        <h5 class="card-title">Breathtaking Landscapes</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <h5 class="card-title">Optional Celebrity Tour</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repellendus?</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Cras justo odio</li>
@@ -319,14 +372,9 @@
                     </ul>
                     <div class="card-body">
                         <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-5">
-                                <div class="card-link-bottom">
-                                    <a href="#" class="card-link">Card link</a>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="card-link-bottom">
-                                    <a href="#" class="card-link">Learn More &rarr;</a>
+                            <div class="col-11">
+                                <div class="card-link-bottom text-center">
+                                    <a href="#celebHomesTour" class="card-link">Learn More About the Celebrity Homes Tour &rarr;</a>
                                 </div>
                             </div>
                         </div>
@@ -342,12 +390,12 @@
     <br>
 
     <!-- Picture Grid - Using This Method -->
-    <div class="gradient-background">
+    <div class="gradient-background" id="celebHomesTour">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-8 mx-auto mt-0 pt-0 text-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col-11 col-lg-8 text-center mt-2 pt-2 mb-0 pb-0 text-center">
                     <div>
-                        <div class="tour-details-box home-about">
+                        <div class="tour-details-box celebrity-homes">
                             <h1 class="display-4">Optional 2-Hour Celebrity Homes Tour</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo saepe quidem fugit earum, a nemo excepturi illum, consectetur natus beatae cum iste, fuga ratione possimus error labore deserunt nostrum!</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit libero odio harum quidem praesentium ducimus quae minus quibusdam alias! At libero sit pariatur nobis error cupiditate, obcaecati voluptas.</p>
@@ -358,12 +406,11 @@
         </div>
     </div>
 
-
     <!-- more text here, under the 3 pictures, but above the cards -->
-    <div class="container-fluid">
+    <div class="container-fluid pt-5" id="stops">
         <div class="row d-flex justify-content-center">
-            <div class="col-8 text-center home-about mt-2 pt-2 mb-5 pb-5">
-                <h1 class="display-4">Lorem ipsum dolor sit amet.</h1>
+            <div class="col-11 col-sm-10 col-lg-8 text-center home-about  text-center home-about mt-2 pt-2 mb-5 pb-5">
+                <h1 class="display-4">See Downtown L.A., Santa Monica, Beverly Hills, and More</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus odit itaque molestias
                     aut
                     omnis eaque quas sint nihil ab earum eligendi repellendus laboriosam velit repudiandae possimus
@@ -414,66 +461,6 @@
         </div>
     </div>
     <br>
-
-    <div id="bookingModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title text-center">Book a Tour</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form>
-                            <div class="row form-group">
-                                <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of Passengers</label>
-                                <div class="col">
-                                    <input type="number" class="form-control form-control-sm" id="num-passengers" placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label for="date" class="col col-sm-6 col-form-label modal-text">Date:</label>
-                                <div class="col-12 col-sm-6">
-                                    <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <label class="col-sm-6 col-form-label modal-text">Tour Type:</label>
-                                <fieldset id="tourType">
-                                    <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn radio-btn-1 active text-nowrap">
-                                            <input type="radio" name="tourType" autocomplete="off" value="cityTour"
-                                                checked> City Tour
-                                        </label>
-                                        <label class="btn radio-btn-2 text-nowrap">
-                                            <input type="radio" name="tourType"  autocomplete="off" value="seasideTour"> Seaside Tour
-                                        </label>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="row form-group">
-                                <label class="col-sm-6 col-form-label modal-text">Extras:</label>
-                                <div class="col-6 btn-group">
-                                    <div class="input-group-text checkbox-container">
-                                        <input type="checkbox" aria-label="Checkbox for following text input" name="celebTour" value="Yes">
-                                        <label for="celebTour" class="pl-3">+ 2-Hour Celebrity Tour</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-group pt-3">
-                                <div class="col">
-                                    <button type="submit" data-dismiss="modal" class="btn-modal btn-modal-cancel">Cancel</button>
-                                    <button type="submit" class="btn-modal btn-modal-submit">Search</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <br>
     <br>
     <br>
@@ -501,14 +488,14 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="aboutus.html">About</a></li>
                             <li><a href="citytour.html">City Tour</a></li>
-                            <li><a href="#">Seaside Tour</a></li>
+                            <li><a href="seasidetour.html">Seaside Tour</a></li>
                             <li><a href="faq.html">FAQ</a></li>
                             <li><a href="contactus.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-7 col-sm-4 px-0 mx-0">
+            <div class="col-7 col-sm-5 px-0 mx-0 pr-3">
                 <div class="d-flex justify-content-end">
                     <div class="text-right">
                         <h5 class="footer-title pb-3">Our Location:</h5>
@@ -563,22 +550,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        // for the sticky nav - add background
-
-        
-            $(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() == 0) {
-                        $('#sticky-nav').removeClass('d-background');
-                    } else {
-                        $('#sticky-nav').addClass('d-background');
-                    }
-                });
-            });
-
-    </script>
+    <script src="js/scripts.js"></script>
 
     </body>
 

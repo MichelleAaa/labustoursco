@@ -129,7 +129,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
 
     <title>L.A. Bus Tours Co.</title>
@@ -170,7 +170,7 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="citytour.html">City Tour</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Seaside Tour</a>
+                                        <a class="dropdown-item" href="seasidetour.html">Seaside Tour</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
@@ -240,76 +240,58 @@
                                     placeholder="">
                             </div>
                         </div>
-                </div>
-                <div class="row form-group">
-                    <label for="date" class="col col-sm-6 col-form-label modal-text">Date:</label>
-                    <div class="col-12 col-sm-6">
-                        <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <label class="col-sm-6 col-form-label modal-text">Tour Type:</label>
-                    <fieldset id="tourType">
-                        <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn radio-btn-1 active text-nowrap">
-                                <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked> City
-                                Tour
-                            </label>
-                            <label class="btn radio-btn-2 text-nowrap">
-                                <input type="radio" name="tourType" autocomplete="off" value="seasideTour"> Seaside Tour
-                            </label>
+                        <!-- </div> -->
+                        <div class="row form-group">
+                            <label for="date" class="col col-sm-6 col-form-label modal-text">Date:</label>
+                            <div class="col-12 col-sm-6">
+                                <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
+                            </div>
                         </div>
-                    </fieldset>
-                </div>
-                <div class="row form-group">
-                    <label class="col-sm-6 col-form-label modal-text">Extras:</label>
-                    <div class="col-6 btn-group">
-                        <div class="input-group-text checkbox-container">
-                            <input type="checkbox" aria-label="Checkbox for following text input" name="celebTour"
-                                value="Yes">
-                            <label for="celebTour" class="pl-3">+ 2-Hour Celebrity Tour</label>
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label modal-text">Tour Type:</label>
+                            <fieldset id="tourType">
+                                <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn radio-btn-1 active text-nowrap">
+                                        <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked>
+                                        City
+                                        Tour
+                                    </label>
+                                    <label class="btn radio-btn-2 text-nowrap">
+                                        <input type="radio" name="tourType" autocomplete="off" value="seasideTour">
+                                        Seaside Tour
+                                    </label>
+                                </div>
+                            </fieldset>
                         </div>
-                    </div>
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label modal-text">Extras:</label>
+                            <div class="col-6 btn-group">
+                                <div class="input-group-text checkbox-container">
+                                    <input type="checkbox" aria-label="Checkbox for following text input"
+                                        name="celebTour" value="Yes">
+                                    <label for="celebTour" class="pl-3">+ 2-Hour Celebrity Tour</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group pt-3">
+                            <div class="col">
+                                <button type="submit" data-dismiss="modal"
+                                    class="btn-modal btn-modal-cancel">Cancel</button>
+                                <button type="submit" class="btn-modal btn-modal-submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="row form-group pt-3">
-                    <div class="col">
-                        <button type="submit" data-dismiss="modal" class="btn-modal btn-modal-cancel">Cancel</button>
-                        <button type="submit" class="btn-modal btn-modal-submit">Search</button>
-                    </div>
-                </div>
-                </form>
             </div>
         </div>
     </div>
 </div>
-</div>
-
-<!-- After the jumbotron -->
-<!-- <div class="container-fluid">
-    <div class="row row-content d-flex justify-content-center align-items-center">
-        <div class="col-11 col-md-4 col-lg-3 col-xl-3 text-center about-text mt-2 pt-2 mb-0 pb-0">
-            <img src="img/city-tour-card-hollywood-stars.jpg" alt="" class="img-fluid img-thumbnail d-flex about-img" />
-        </div>
-        <div class="col-11 col-md-8 col-lg-7 col-xl-6 text-left about-text mt-2 pt-2 mb-0 pb-0">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, dolorum excepturi
-                suscipit, illo nesciunt, assumenda eius nulla placeat corrupti recusandae. Minus, id quisquam. Cum
-                necessitatibus eum inventore blanditiis adipisci exercitationem deserunt. Hic placeat quis nulla
-                exercitationem, facilis iure quisquam repellendus nisi eos, aut magnam, rem incidunt nemo inventore
-                dolore.</p>
-        </div>
-    </div>
-    <div class="row pt-3 mx-auto">
-        <div class="col-10 mx-auto">
-            <hr class="">
-        </div>
-    </div>
-</div> -->
 
 <div class="container">
     <div class="row row-content align-items-center mb-5 mt-5">
         <div class="col">
             <div class="media about-text">
-                <img class="mr-3 img-thumbnail media-img align-self-center" src="img/city-tour-card-hollywood-stars.jpg" alt="Breadcrumb Trail" />
+                <img class="mr-3 img-thumbnail media-img align-self-center" src="img/la-sky.jpg" alt="Breadcrumb Trail" />
                 <div class="media-body align-self-center">
                     <h3 class="mb-3 about-heading-text text-center">Our Company</h3>
                     <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus molestias nihil rerum et ipsa, totam accusamus mollitia perferendis quod commodi quis ipsum distinctio! Velit, quis!
@@ -327,14 +309,14 @@
                             ipsa, totam accusamus mollitia perferendis quod commodi quis ipsum distinctio! Velit!
                         </p>
                     </div>
-                    <img class="mr-3 img-thumbnail media-img align-self-center" src="img/city-tour-card-hollywood-stars.jpg" alt="Breadcrumb Trail" />
+                    <img class="mr-3 img-thumbnail media-img align-self-center" src="img/hollywood-tower-cropped.jpg" alt="Breadcrumb Trail" />
                 </div>
             </div>
         </div>
             <div class="row row-content align-items-center mb-5 mt-5">
                 <div class="col">
                     <div class="media about-text">
-                        <img class="mr-3 img-thumbnail media-img align-self-center" src="img/city-tour-card-hollywood-stars.jpg"
+                        <img class="mr-3 img-thumbnail media-img align-self-center" src="img/santa-monica-beach.jpg"
                             alt="Breadcrumb Trail" />
                         <div class="media-body align-self-center">
                             <h3 class="mb-3 about-heading-text text-center">Our Buses</h3>
@@ -382,14 +364,14 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="aboutus.html">About</a></li>
                                 <li><a href="citytour.html">City Tour</a></li>
-                                <li><a href="#">Seaside Tour</a></li>
+                                <li><a href="seasidetour.html">Seaside Tour</a></li>
                                 <li><a href="faq.html">FAQ</a></li>
                                 <li><a href="contactus.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-7 col-sm-4 px-0 mx-0">
+                <div class="col-7 col-sm-5 px-0 mx-0 pr-3">
                     <div class="d-flex justify-content-end">
                         <div class="text-right">
                             <h5 class="footer-title pb-3">Our Location:</h5>
@@ -440,22 +422,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        // for the sticky nav - add background
-
-
-        $(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() == 0) {
-                    $('#sticky-nav').removeClass('d-background');
-                } else {
-                    $('#sticky-nav').addClass('d-background');
-                }
-            });
-        });
-
-    </script>
+    <script src="js/scripts.js"></script>
 
     </body>
 
