@@ -1,3 +1,18 @@
+$font-dark: #565656;
+$gradient-light: rgba(255, 255, 255, 0.65);
+$font-roboto: 'Roboto', sans-serif;
+$font-lato: 'Lato', sans-serif;
+$font-otr: 'Over the Rainbow', cursive;
+
+$font-size-small-0: 1.2rem;
+$font-size-small-1: 1.3rem;
+$font-size-small-2: 1.4rem;
+$font-size-med-1: 1.5rem;
+$font-size-med-1: 1.7rem;
+$font-size-large-1: 2rem;
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,14 +89,14 @@ table {
 }
 
 .jumbotron-home {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), 
-rgba(255, 255, 255, 0.65)), url(/img/downtownla.jpg);
+    background-image: linear-gradient(to right, $gradient-light, 
+$gradient-light), url(/img/downtownla.jpg);
 }
 
 .jumbotron-la {
     align-self: center;
-    font-family:  'Roboto', cursive;
-    color: #565656;
+    font-family:  $font-roboto;
+    color: $font-dark;
     color: rgba(255, 255, 255, .99);
     text-shadow: 3px 3px rgba(227, 39, 39, .55);
     text-decoration: underline;
@@ -93,17 +108,17 @@ rgba(255, 255, 255, 0.65)), url(/img/downtownla.jpg);
 }
 
 .jumbotron-citytour {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), 
-rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg);
+    background-image: linear-gradient(to right, $gradient-light, 
+$gradient-light), url(/img/card-city.jpg);
 }
 
 .navbar-icon-title {
     text-align: center;
-    font-family: 'Over the Rainbow', cursive;
-    color: #565656;
-    text-shadow: 3px 3px rgba(255, 255, 255, 0.65);
+    font-family: $font-otr;
+    color: $font-dark;
+    text-shadow: 3px 3px $gradient-light;
     text-shadow: 3px 3px white;
-    font-size: 2rem;
+    font-size: $font-size-large-1;
     display: inline-flex;
     align-items: center;
     vertical-align: middle;
@@ -111,29 +126,29 @@ rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg);
 
 .navbar-la-title {
     align-self: center;
-    font-family:  'Roboto', cursive;
+    font-family:  $font-roboto;
     font-weight: bold;
-    color: #565656;
-    text-shadow: 3px 3px rgba(255, 255, 255, 0.65);
+    color: $font-dark;
+    text-shadow: 3px 3px $gradient-light;
     text-decoration-thickness: 1px;
     border-radius: 10px;
     display: inline-flex;
     align-items: center;
     vertical-align: middle;
-    font-size: 1.7rem;
+    font-size: $font-size-med-1;
 }
 
 .jumbotron-title, .home-jumbotron-text {
     text-align: center;
-    font-family: 'Over the Rainbow', cursive;
-    color: #565656;
-    text-shadow: 3px 3px rgba(255, 255, 255, 0.65);
+    font-family: $font-otr;
+    color: $font-dark;
+    text-shadow: 3px 3px $gradient-light;
 }
 
 .header-tour-descrip2 {
-    color: #565656;
+    color: $font-dark;
     font-weight: bold;
-    font-family: 'Lato', sans-serif;
+    font-family: $font-lato;
     text-shadow: white;
 }
 
@@ -201,7 +216,7 @@ rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg);
 
 .navbar {
     margin-top: -40px;
-    font-size: 1.5rem;
+    font-size: $font-size-med-1;
 }
 
 .big-height {
@@ -209,8 +224,8 @@ rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg);
 }
 
 .header-arrow {
-    color: #565656;
-    font-size: 1.5rem;
+    color: $font-dark;
+    font-size: $font-size-med-1;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(to right, rgba(236, 233, 231, .60), rgba(35, 35, 35, .90));
@@ -244,12 +259,12 @@ rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg);
 
 .btn-secondary {
     font-family: 'Dancing Script';
-    font-family: 'lato', cursive;
+    font-family: $font-lato;
     font-weight: bold;
     background-image: linear-gradient(to right, rgba(227, 39, 39, .95), rgba(227, 39, 39, .75));
     background-color: white; 
     background-color: rgba(227, 39, 39, .95);
-    border: 1px solid #565656;
+    border: 1px solid $font-dark;
     color: white;
 }
 
@@ -263,7 +278,7 @@ rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg);
 }
 
 .btn-text:link, .btn-text:visited {
-    font-size: 1.7rem;
+    font-size: $font-size-med-1;
     color: white;
     display: inline block;
     text-decoration: none;
@@ -274,12 +289,12 @@ rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg);
 .btn-secondary:hover {
     background-color: white; 
     background-image: linear-gradient(to right, rgba(227, 39, 39, .75), rgba(227, 39, 39, .95));
-    border: 1px solid #565656;
+    border: 1px solid $font-dark;
 }
 
 .btn-secondary:hover .btn-text {
-    color: #565656;
-    text-shadow: 1px 1px 1px #565656;
+    color: $font-dark;
+    text-shadow: 1px 1px 1px $font-dark;
 }
 
 /* Modal */
@@ -289,9 +304,9 @@ rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg);
     color: white;
     font-size: 3rem;
     font-weight: bold;
-    font-family: 'Over the Rainbow', sans-serif;
-    color: #565656;
-    text-shadow: 3px 3px rgba(255, 255, 255, 0.65);
+    font-family: $font-otr;
+    color: $font-dark;
+    text-shadow: 3px 3px $gradient-light;
     background-color: rgba(245, 166, 166, .10);
 }
 
@@ -310,13 +325,13 @@ rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg);
 }
 
 .modal-text {
-    font-size: 1.2rem;
+    font-size: $font-size-small-0;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
 }
 
 .checkbox-container {
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: $gradient-light;
 }
 
 input[type=checkbox]:checked + label {
@@ -325,11 +340,11 @@ input[type=checkbox]:checked + label {
 
 .btn-modal {
     color: white;
-    font-size: 1.4rem;
+    font-size: $font-size-small-2;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
     display: inline-block;
-    border: 1px solid #565656;
+    border: 1px solid $font-dark;
     border-radius: 0.25rem;
     line-height: 1.5;
     transition: .5s ease-out;
@@ -338,7 +353,7 @@ input[type=checkbox]:checked + label {
 }
 
 .btn-modal-cancel {
-    background: linear-gradient(to left, gray 50%, #565656 50%) right;
+    background: linear-gradient(to left, gray 50%, $font-dark 50%) right;
     background-size: 220%;
 }
 
@@ -357,16 +372,16 @@ input[type=checkbox]:checked + label {
 }
 
 .header-tour-descrip {
-    color: #565656;
+    color: $font-dark;
     font-weight: bold;
-    font-family: 'Lato', sans-serif;
+    font-family: $font-lato;
     text-shadow: white;
 }
 
 .home-about {
-    font-size: 2rem;
-    color: #565656;
-    font-family: 'roboto', sans-serif;
+    font-size: $font-size-large-1;
+    color: $font-dark;
+    font-family: $font-roboto;
 }
 
 .home-about > p {
@@ -380,8 +395,8 @@ input[type=checkbox]:checked + label {
 }
 
 .home-img-grid {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), 
-rgba(255, 255, 255, 0.65));
+    background-image: linear-gradient(to right, $gradient-light, 
+$gradient-light);
     min-height: 100vh;
     -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
     clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
@@ -505,8 +520,8 @@ rgba(255, 255, 255, 0.65));
 }
 
 .celebrity-homes {
-    color: #565656;
-    font-family: 'roboto', sans-serif;
+    color: $font-dark;
+    font-family: $font-roboto;
 }
 
 .celebrity-homes > p {
@@ -516,7 +531,7 @@ rgba(255, 255, 255, 0.65));
 
 @media only screen and (min-width: 320px) {
     .celebrity-homes > p {
-        font-size: 1.5rem;
+        font-size: $font-size-med-1;
     }
     .celebrity-homes > h1 {
         font-size: 3rem;
@@ -525,7 +540,7 @@ rgba(255, 255, 255, 0.65));
 
 @media only screen and (min-width: 768px) {
     .celebrity-homes > p {
-        font-size: 2rem;
+        font-size: $font-size-large-1;
     }
     .celebrity-homes > h1 {
         font-size: 3.5rem;
@@ -535,8 +550,8 @@ rgba(255, 255, 255, 0.65));
 }
 
 .bus-background {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), 
-rgba(255, 255, 255, 0.65)), url(/img/bus-large.png);
+    background-image: linear-gradient(to right, $gradient-light, 
+$gradient-light), url(/img/bus-large.png);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -556,7 +571,7 @@ rgba(255, 255, 255, 0.65)), url(/img/bus-large.png);
     height: 43vh;
     width: 30vw;
     margin-top: 28vh;
-    font-size: 1.5rem;
+    font-size: $font-size-med-1;
     background-color: rgba(86, 86, 86, .80);
     border: 2px solid gray;
     border-radius: 10px;
@@ -587,7 +602,7 @@ rgba(255, 255, 255, 0.65)), url(/img/bus-large.png);
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%); 
 }
 
 .star {
@@ -604,8 +619,8 @@ rgba(255, 255, 255, 0.65)), url(/img/bus-large.png);
 
 .footer-title {
     color: gray;
-    text-shadow: 1px 1px 1px #565656;
-    font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 1px $font-dark;
+    font-family: $font-lato;
 }
 
 footer li {
@@ -614,7 +629,7 @@ footer li {
 }
 
 footer a, .contact-links, .footer-item, .copyright {
-    color: #565656;
+    color: $font-dark;
 }
 
 .footer-p {
@@ -623,7 +638,7 @@ footer a, .contact-links, .footer-item, .copyright {
 
 @media only screen and (min-width: 320px) {
     footer a, .contact-links, .footer-item {
-        font-size: 1.2rem;
+        font-size: $font-size-small-0;
     }
     .footer-title {
         font-size: 1.8rem;
@@ -632,10 +647,10 @@ footer a, .contact-links, .footer-item, .copyright {
 
 @media only screen and (min-width: 768px) {
     footer a, .contact-links, .footer-item {
-        font-size: 1.4rem;
+        font-size: $font-size-small-2;
     }
     .footer-title {
-        font-size: 2rem;
+        font-size: $font-size-large-1;
     }
 }
 
@@ -667,8 +682,8 @@ footer a, .contact-links, .footer-item, .copyright {
 }
 
 tr {
-    font-size: 1.3rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: $font-size-small-1;
+    font-family: $font-roboto;
     font-weight: bold;
 }
 
@@ -676,8 +691,8 @@ thead {
     background: gray;
     color: white;
     font-weight: bold;
-    font-size: 1.4rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: $font-size-small-2;
+    font-family: $font-roboto;
 }
 
 @media only screen and (min-width: 320px) {
@@ -685,16 +700,16 @@ thead {
         font-size: 1.1rem;
     }
     thead {
-        font-size: 1.2rem;
+        font-size: $font-size-small-0;
     }
 }
 
 @media only screen and (min-width: 768px) {
     tr {
-        font-size: 1.3rem;
+        font-size: $font-size-small-1;
     }
     thead {
-        font-size: 1.4rem;
+        font-size: $font-size-small-2;
     }
 }
 
@@ -710,9 +725,9 @@ thead {
 }
 
 .about-text {
-    font-size: 1.3rem;
-    color: #565656; 
-    font-family: 'roboto', sans-serif;
+    font-size: $font-size-small-1;
+    color: $font-dark; 
+    font-family: $font-roboto;
 }
 
 .about-heading-text {
@@ -722,16 +737,16 @@ thead {
 
 @media only screen and (min-width: 320px) {
     .about-text {
-        font-size: 1.4rem;
+        font-size: $font-size-small-2;
     }
     .about-heading-text {
-        font-size: 1.7rem;
+        font-size: $font-size-med-1;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .about-text {
-        font-size: 1.5rem;
+        font-size: $font-size-med-1;
     }
     .about-heading-text {
         font-size: 2rem;
@@ -826,8 +841,8 @@ thead {
 }
 
 .faq-card .card-header h4 *, .faq-card-2 .card-header h4 * {
-    color: #565656; 
-    font-size: 1.3rem;
+    color: $font-dark; 
+    font-size: $font-size-small-1;
     font-family: sans-serif;
     text-decoration: none;
 }
@@ -859,8 +874,8 @@ thead {
 }
 
 form {
-    font-family: "Roboto";
-    font-size: 1.7rem;
+    font-family: $font-roboto;
+    font-size: $font-size-med-1;
 }
 
 .contactus-img {
