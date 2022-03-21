@@ -3,6 +3,7 @@ $gradient-light: rgba(255, 255, 255, 0.65);
 $font-roboto: 'Roboto', sans-serif;
 $font-lato: 'Lato', sans-serif;
 $font-otr: 'Over the Rainbow', cursive;
+$font-vajahday: "Vajahday Script", sans-serif;
 
 $font-size-small-0: 1.2rem;
 $font-size-small-1: 1.3rem;
@@ -64,18 +65,110 @@ table {
     padding-top: 4vh;
     position: fixed;
     
+    .navbar-collapse.show {
+        // background-color: rgba(255, 255, 255, 0.75);
+        // border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 0px;
+        border: inherit;
+        // #navbarDropdown {
+        //     background: transparent;
+        // }//REMOVES THE BACKGROUND WHEN TOURS IS SELECTED IN LARGE SCREEN SIZE
+        .dropdown-item {
+            // padding-bottom: 0px;
+            // margin-bottom: 0px;
+            // width: 95%;
+            margin-bottom: 2px;
+            // margin-left: 10px;
+            // width: 95%;
+            // margin-right: 5px;
+            color: #6c757d;
+            color: #597996;
+            color: $font-dark;
+            &:nth-child(1){
+                margin-bottom: 4px;
+                margin-top: 2px;
+            }
+            &:nth-child(1):hover {
+                margin-top: 4px;
+            }
+        }
+        .dropdown-divider {
+            display: none;
+        }
+        #navbarDropdown {
+                background: rgba(255, 255, 255, 0.85);
+            }
+        a {
+            background: linear-gradient(to left, rgba(255, 255, 255, 0.75) 50%, rgba(227, 39, 39, .55) 50%) right;
+            background-image: linear-gradient(120deg, rgba(227, 39, 39, .35) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 50%);
+            background-size: 220%;
+            transition: .5s ease-out;
+            text-align: center;
+            margin-top: 2px;
+            margin-bottom: 2px;
+
+            &:hover {
+                background-position: left;
+                padding: 2px;
+                // color: white;
+            }
+        }
+    }
 }
+
+//DELETE ALL OF THE BELOW ITEMS IF YOU WANT TO GET RID OF THE TOURS SUBMENU
+
+.dropdown-menu {
+    // background-color: rgba(255, 255, 255, 0.75);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    // border: 1px solid $font-dark;
+    border-radius: 0.25rem;
+    border-radius: 10px;
+    font-size: inherit;
+    color: inherit;
+    background-clip: inherit;
+    padding: inherit;
+    margin: inherit;
+    margin-right: 2px;
+    &:nth-child(1) {
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    &:hover {
+        border: none;
+    }
+    a {
+        text-align: center;
+        border-radius: 0px;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0.75) 50%, rgba(227, 39, 39, .55) 50%) right;
+        background-image: linear-gradient(120deg, rgba(227, 39, 39, .35) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 50%);
+        background-size: 220%;
+        transition: .5s ease-in;
+    }
+}
+
+.dropdown-item:hover {
+        background-position: left;
+    }
+
+// #navbarDropdown:focus {
+//     background: transparent;
+    
+// }
+
+//DELETE ALL OF THE ABOVE ITEMS IF YOU WANT TO REMOVE THE TOURS AS A SUBMENU
 
 .d-background {
     background-color: rgba(255, 255, 255, 0.75);
 }
 
-#non-sticky-nav {
-    margin-top: 0;
-    padding-right: 0;
-    margin-right: 0;
-    padding-top: 4vh;
-}
+// #non-sticky-nav {
+//     margin-top: 0;
+//     padding-right: 0;
+//     margin-right: 0;
+//     padding-top: 4vh;
+// }
 
 .jumbotron {
     color: white;
@@ -324,10 +417,27 @@ $gradient-light), url(/img/card-city.jpg);
     color: white;
 }
 
+input, textarea, select {
+    color: $font-dark;
+    font-family: $font-vajahday;
+    font-weight: normal;
+}
+
+select {
+    color: #6c757d;
+}
+
 .modal-text {
     font-size: $font-size-small-0;
     font-weight: bold;
     font-family: $font-roboto;
+}
+
+#bookingModal {
+    input, .checkbox-container label, fieldset label {
+        font-family: $font-vajahday;
+        font-size: 1.1rem;
+    }
 }
 
 .checkbox-container {
@@ -354,11 +464,12 @@ input[type=checkbox]:checked + label {
 
 .btn-modal-cancel {
     background: linear-gradient(to left, gray 50%, $font-dark 50%) right;
+    background: linear-gradient(to left, gray 50%, rgb(134, 133, 133) 50%) right;
     background-size: 220%;
 }
 
 .btn-modal-submit {
-    background: linear-gradient(to left, rgba(227, 39, 39, 1) 50%, rgb(168, 23, 23) 50%) right;
+    background: linear-gradient(to left, rgba(227, 39, 39, 1) 50%, rgb(235, 44, 44) 50%) right;
     background-size: 220%;
 }
 
@@ -524,11 +635,6 @@ $gradient-light);
     font-family: $font-roboto;
 }
 
-.celebrity-homes > p {
-    margin: 5px;
-    padding: 10px;
-}
-
 @media only screen and (min-width: 320px) {
     .celebrity-homes > p {
         font-size: $font-size-med-1;
@@ -541,6 +647,8 @@ $gradient-light);
 @media only screen and (min-width: 768px) {
     .celebrity-homes > p {
         font-size: $font-size-large-1;
+        margin: 5px;
+        padding: 10px;
     }
     .celebrity-homes > h1 {
         font-size: 3.5rem;

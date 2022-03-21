@@ -47,15 +47,64 @@ table {
   background-color: transparent;
   padding-top: 4vh;
   position: fixed; }
+  .sticky-nav-dup .navbar-collapse.show {
+    margin-top: 10px;
+    margin-left: 0px;
+    border: inherit; }
+    .sticky-nav-dup .navbar-collapse.show .dropdown-item {
+      margin-bottom: 2px;
+      color: #6c757d;
+      color: #597996;
+      color: #565656; }
+      .sticky-nav-dup .navbar-collapse.show .dropdown-item:nth-child(1) {
+        margin-bottom: 4px;
+        margin-top: 2px; }
+      .sticky-nav-dup .navbar-collapse.show .dropdown-item:nth-child(1):hover {
+        margin-top: 4px; }
+    .sticky-nav-dup .navbar-collapse.show .dropdown-divider {
+      display: none; }
+    .sticky-nav-dup .navbar-collapse.show #navbarDropdown {
+      background: rgba(255, 255, 255, 0.85); }
+    .sticky-nav-dup .navbar-collapse.show a {
+      background: linear-gradient(to left, rgba(255, 255, 255, 0.75) 50%, rgba(227, 39, 39, 0.55) 50%) right;
+      background-image: linear-gradient(120deg, rgba(227, 39, 39, 0.35) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 50%);
+      background-size: 220%;
+      transition: .5s ease-out;
+      text-align: center;
+      margin-top: 2px;
+      margin-bottom: 2px; }
+      .sticky-nav-dup .navbar-collapse.show a:hover {
+        background-position: left;
+        padding: 2px; }
+
+.dropdown-menu {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.25rem;
+  border-radius: 10px;
+  font-size: inherit;
+  color: inherit;
+  background-clip: inherit;
+  padding: inherit;
+  margin: inherit;
+  margin-right: 2px; }
+  .dropdown-menu:nth-child(1) {
+    background-color: rgba(255, 255, 255, 0.75); }
+  .dropdown-menu:hover {
+    border: none; }
+  .dropdown-menu a {
+    text-align: center;
+    border-radius: 0px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.75) 50%, rgba(227, 39, 39, 0.55) 50%) right;
+    background-image: linear-gradient(120deg, rgba(227, 39, 39, 0.35) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 50%);
+    background-size: 220%;
+    transition: .5s ease-in; }
+
+.dropdown-item:hover {
+  background-position: left; }
 
 .d-background {
   background-color: rgba(255, 255, 255, 0.75); }
-
-#non-sticky-nav {
-  margin-top: 0;
-  padding-right: 0;
-  margin-right: 0;
-  padding-top: 4vh; }
 
 .jumbotron {
   color: white;
@@ -258,10 +307,22 @@ table {
 .radio-btn-1:hover, .radio-btn-2:hover {
   color: white; }
 
+input, textarea, select {
+  color: #565656;
+  font-family: "Vajahday Script", sans-serif;
+  font-weight: normal; }
+
+select {
+  color: #6c757d; }
+
 .modal-text {
   font-size: 1.2rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif; }
+
+#bookingModal input, #bookingModal .checkbox-container label, #bookingModal fieldset label {
+  font-family: "Vajahday Script", sans-serif;
+  font-size: 1.1rem; }
 
 .checkbox-container {
   background-color: rgba(255, 255, 255, 0.65); }
@@ -284,10 +345,11 @@ input[type=checkbox]:checked + label {
 
 .btn-modal-cancel {
   background: linear-gradient(to left, gray 50%, #565656 50%) right;
+  background: linear-gradient(to left, gray 50%, #868585 50%) right;
   background-size: 220%; }
 
 .btn-modal-submit {
-  background: linear-gradient(to left, #e32727 50%, #a81717 50%) right;
+  background: linear-gradient(to left, #e32727 50%, #eb2c2c 50%) right;
   background-size: 220%; }
 
 .btn-modal:hover {
@@ -423,10 +485,6 @@ input[type=checkbox]:checked + label {
   color: #565656;
   font-family: "Roboto", sans-serif; }
 
-.celebrity-homes > p {
-  margin: 5px;
-  padding: 10px; }
-
 @media only screen and (min-width: 320px) {
   .celebrity-homes > p {
     font-size: 1.7rem; }
@@ -435,7 +493,9 @@ input[type=checkbox]:checked + label {
 
 @media only screen and (min-width: 768px) {
   .celebrity-homes > p {
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin: 5px;
+    padding: 10px; }
   .celebrity-homes > h1 {
     font-size: 3.5rem;
     font-weight: 300;
