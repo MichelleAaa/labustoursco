@@ -47,61 +47,62 @@ table {
   background-color: transparent;
   padding-top: 4vh;
   position: fixed; }
+  .sticky-nav-dup .navbar-collapse.collapsing {
+    transition: height 0.0s ease; }
   .sticky-nav-dup .navbar-collapse.show {
-    margin-top: 10px;
+    margin-top: 9px;
     margin-left: 0px;
-    border: inherit; }
-    .sticky-nav-dup .navbar-collapse.show .dropdown-item {
-      margin-bottom: 2px;
-      color: #6c757d;
-      color: #597996;
-      color: #565656; }
-      .sticky-nav-dup .navbar-collapse.show .dropdown-item:nth-child(1) {
-        margin-bottom: 4px;
-        margin-top: 2px; }
-      .sticky-nav-dup .navbar-collapse.show .dropdown-item:nth-child(1):hover {
-        margin-top: 4px; }
-    .sticky-nav-dup .navbar-collapse.show .dropdown-divider {
+    margin-right: 0px;
+    border: inherit;
+    border-radius: 5px;
+    overflow: hidden; }
+    .sticky-nav-dup .navbar-collapse.show .dropdown {
       display: none; }
-    .sticky-nav-dup .navbar-collapse.show #navbarDropdown {
-      background: rgba(255, 255, 255, 0.85); }
+    .sticky-nav-dup .navbar-collapse.show .d-none {
+      display: block !important; }
     .sticky-nav-dup .navbar-collapse.show a {
-      background: linear-gradient(to left, rgba(255, 255, 255, 0.75) 50%, rgba(227, 39, 39, 0.55) 50%) right;
-      background-image: linear-gradient(120deg, rgba(227, 39, 39, 0.35) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 50%);
+      background: linear-gradient(to right, rgba(227, 39, 39, 0.45) 50%, rgba(255, 255, 255, 0.75) 50%) left;
       background-size: 220%;
       transition: .5s ease-out;
       text-align: center;
       margin-top: 2px;
-      margin-bottom: 2px; }
+      margin-bottom: 2px;
+      color: white;
+      font-size: 2.7rem; }
       .sticky-nav-dup .navbar-collapse.show a:hover {
-        background-position: left;
-        padding: 2px; }
+        background-position: right;
+        padding: 2px;
+        color: black; }
+
+@media only screen and (min-width: 992px) {
+  .sticky-nav-dup .navbar-collapse.show a {
+    background-image: unset;
+    background: transparent;
+    color: inherit;
+    font-size: inherit; } }
 
 .dropdown-menu {
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 0.25rem;
-  border-radius: 10px;
   font-size: inherit;
   color: inherit;
   background-clip: inherit;
   padding: inherit;
   margin: inherit;
-  margin-right: 2px; }
-  .dropdown-menu:nth-child(1) {
-    background-color: rgba(255, 255, 255, 0.75); }
+  margin-right: 2px;
+  overflow: hidden;
+  border: none; }
   .dropdown-menu:hover {
     border: none; }
   .dropdown-menu a {
     text-align: center;
-    border-radius: 0px;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.75) 50%, rgba(227, 39, 39, 0.55) 50%) right;
-    background-image: linear-gradient(120deg, rgba(227, 39, 39, 0.35) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 50%);
+    background: linear-gradient(to right, rgba(227, 39, 39, 0.45) 50%, rgba(255, 255, 255, 0.75) 50%) left;
     background-size: 220%;
-    transition: .5s ease-in; }
-
-.dropdown-item:hover {
-  background-position: left; }
+    transition: .5s ease-in;
+    color: white;
+    margin-bottom: 4px; }
+    .dropdown-menu a:hover {
+      color: black;
+      background-position: right; }
 
 .d-background {
   background-color: rgba(255, 255, 255, 0.75); }

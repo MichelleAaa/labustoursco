@@ -65,110 +65,89 @@ table {
     padding-top: 4vh;
     position: fixed;
     
+    .navbar-collapse.collapsing {
+        transition: height 0.0s ease;
+    }
+    
     .navbar-collapse.show {
-        // background-color: rgba(255, 255, 255, 0.75);
-        // border-radius: 10px;
-        margin-top: 10px;
+        margin-top: 9px;
         margin-left: 0px;
+        margin-right: 0px;
         border: inherit;
-        // #navbarDropdown {
-        //     background: transparent;
-        // }//REMOVES THE BACKGROUND WHEN TOURS IS SELECTED IN LARGE SCREEN SIZE
-        .dropdown-item {
-            // padding-bottom: 0px;
-            // margin-bottom: 0px;
-            // width: 95%;
-            margin-bottom: 2px;
-            // margin-left: 10px;
-            // width: 95%;
-            // margin-right: 5px;
-            color: #6c757d;
-            color: #597996;
-            color: $font-dark;
-            &:nth-child(1){
-                margin-bottom: 4px;
-                margin-top: 2px;
-            }
-            &:nth-child(1):hover {
-                margin-top: 4px;
-            }
-        }
-        .dropdown-divider {
+        border-radius: 5px;
+        overflow: hidden;
+
+        .dropdown {
             display: none;
         }
-        #navbarDropdown {
-                background: rgba(255, 255, 255, 0.85);
-            }
+        .d-none {
+            display: block !important;
+        }
         a {
-            background: linear-gradient(to left, rgba(255, 255, 255, 0.75) 50%, rgba(227, 39, 39, .55) 50%) right;
-            background-image: linear-gradient(120deg, rgba(227, 39, 39, .35) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 50%);
+            background: linear-gradient(to right, rgba(227, 39, 39, .45) 50%, rgba(255, 255, 255, 0.75) 50%) left;
             background-size: 220%;
             transition: .5s ease-out;
             text-align: center;
             margin-top: 2px;
             margin-bottom: 2px;
+            color: white;
+            font-size: 2.7rem;
 
             &:hover {
-                background-position: left;
+                background-position: right;
                 padding: 2px;
-                // color: white;
+                color: black;
             }
         }
     }
 }
 
-//DELETE ALL OF THE BELOW ITEMS IF YOU WANT TO GET RID OF THE TOURS SUBMENU
+@media only screen and (min-width: 992px) {
+    .sticky-nav-dup {
+        .navbar-collapse.show {
+            a {
+                background-image: unset;
+                background: transparent;
+                color: inherit;
+                font-size: inherit;
+            }
+        }
+    }
+}
 
 .dropdown-menu {
-    // background-color: rgba(255, 255, 255, 0.75);
     background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    // border: 1px solid $font-dark;
-    border-radius: 0.25rem;
-    border-radius: 10px;
     font-size: inherit;
     color: inherit;
     background-clip: inherit;
     padding: inherit;
     margin: inherit;
     margin-right: 2px;
-    &:nth-child(1) {
-        background-color: rgba(255, 255, 255, 0.75);
-    }
+    overflow: hidden;
+    border: none;
+    
     &:hover {
         border: none;
     }
+
     a {
         text-align: center;
-        border-radius: 0px;
-        background: linear-gradient(to left, rgba(255, 255, 255, 0.75) 50%, rgba(227, 39, 39, .55) 50%) right;
-        background-image: linear-gradient(120deg, rgba(227, 39, 39, .35) 0%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 50%);
+        background: linear-gradient(to right, rgba(227, 39, 39, .45) 50%, rgba(255, 255, 255, 0.75) 50%) left;
         background-size: 220%;
         transition: .5s ease-in;
+        color: white;
+        margin-bottom: 4px;
+        
+        &:hover {
+            color: black;
+            background-position: right;
+        }
     }
 }
-
-.dropdown-item:hover {
-        background-position: left;
-    }
-
-// #navbarDropdown:focus {
-//     background: transparent;
-    
-// }
-
-//DELETE ALL OF THE ABOVE ITEMS IF YOU WANT TO REMOVE THE TOURS AS A SUBMENU
 
 .d-background {
     background-color: rgba(255, 255, 255, 0.75);
 }
-
-// #non-sticky-nav {
-//     margin-top: 0;
-//     padding-right: 0;
-//     margin-right: 0;
-//     padding-top: 4vh;
-// }
 
 .jumbotron {
     color: white;
