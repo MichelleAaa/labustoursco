@@ -1,596 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-        <!-- Additional CSS must be placed after Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-<!-- roboto -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-<!-- roboto condensed -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-<!-- source serif pro  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
-<!-- montserrat -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"
+    integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- lato thin -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
-
-<!-- Hubballi REgular -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
-<!-- Satisfy font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-
-<!-- great vibes -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
-<!-- courgette -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-
-<!-- itim -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-
-<!-- smooch -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
-
-<!-- ARchtects Daughter -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-
-<!-- merienda -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-
-<!-- rock Salt -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-
-<!-- Nothing you could do -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-
-<!-- comic neue -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
-
-<!-- LA BELLE AURORE -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-
-<!-- carattere -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
-
-
-        <link rel="stylesheet" href="css/styles.css" />
-
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>L.A. Bus Tours Co.</title>
+
 </head>
-<div>
 
-    <!-- nav and jumbotron Top -->
-<div class="container-fluid">
-    <div class="sticky-top">
-        <div class="row sticky-nav-dup p-auto d-flex justify-content-center" id="sticky-nav">
-            <!-- navbar -->
-            <div class="col-12 d-flex justify-content-end">
-                <nav class="navbar navbar-expand-lg navbar-light pt-0">
-                    <a class="navbar-brand align-self-start" href="index.html"><img src="img/l.a.bustourslogocropped.png" alt="" height="60"
-                            width="60"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="aboutus.html">About Us</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Tours
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="citytour.html">City Tour</a>
-                                    <div class="dropdown-divider d-none"></div>
-                                    <a class="dropdown-item" href="seasidetour.html">Seaside Tour</a>
-                                </div>
-                            </li>
-                            <li class="nav-item d-none">
-                                <a class="nav-link"  href="citytour.html">City Tour</a>
-                            </li>
-                            <li class="nav-item d-none">
-                                <a class="nav-link" href="seasidetour.html">Seaside Tour</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactus.html">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>
-
-<header class="jumbotron jumbotron-fluid jumbotron-citytour pt-0 mt-0 pr-0 mr-0 mt-0">
-    <div class="center-vertically">
-        <div class="center-vertically-child">
-            <div class="container-fluid">
-                <div class="d-flex justify-content-center">
-                <div class="row mx-auto d-flex justify-content-center">
-                    <div class="col-11 mx-auto">
-                        <div class="d-flex justify-content-start text-center">
-                            <div class="col-11 col-sm-6 ml-0 pl-0">
-                                <h5 class="jumbotron-title text-center text-nowrap "> <span class="jumbotron-la"> L.A </span>Bus Tours</h5>
-                            </div>
+    <div class="container-fluid">
+        <div class="sticky-top">
+            <div class="row sticky-nav-dup p-auto d-flex justify-content-center" id="sticky-nav">
+                <div class="col-12 d-flex justify-content-end">
+                    <nav class="navbar navbar-expand-lg navbar-light pt-0">
+                        <a class="navbar-brand align-self-start" href="index.html"><img src="img/l.a.bustourslogocropped.png" alt="L.A. Bus Tours Co. Logo" height="60"
+                                width="60"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Tours
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="citytour.html">City Tour</a>
+                                        <div class="dropdown-divider d-none"></div>
+                                        <a class="dropdown-item" href="seasidetour.html">Seaside Tour</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-none">
+                                    <a class="nav-link"  href="citytour.html">City Tour</a>
+                                </li>
+                                <li class="nav-item d-none">
+                                    <a class="nav-link" href="seasidetour.html">Seaside Tour</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-11">
-                        <hr class="header-line">
-                    </div>
-                </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-11 col-md-8 col-xl-10 mb-xl-0">
-                <div>
-                    <h1 class="text-center m-4"> <span class="header-tour-descrip">City and Seaside Adventures in the Los Angeles Area</span></h1>
+                    </nav>
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
-                <button type="button" class="btn btn-secondary btn-main"><a href="#home-card" class="btn-text text-nowrap text-center">Learn More
-                        &rarr;</a></button>
-            </div>
-            <p class="my-5"></p>
-        </div>  
     </div>
-</header>
 
-<div id="bookingModal" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title text-center">Book a Tour</h3>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
+    <header class="jumbotron jumbotron-fluid jumbotron-citytour pt-0 mt-0 pr-0 mr-0 mt-0">
+        <div class="wrapper-1">
+            <div class="wrapper-2">
                 <div class="container-fluid">
-                    <form>
-                        <div class="row form-group">
-                            <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of
-                                Passengers</label>
-                            <div class="col">
-                                <input type="number" class="form-control form-control-sm" id="num-passengers"
-                                placeholder="">
-                            </div>
-                        </div>
-                        <!-- </div> -->
-                        <div class="row form-group">
-                            <label for="date" class="col col-sm-6 col-form-label modal-text">Date:</label>
-                            <div class="col-12 col-sm-6">
-                                <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label class="col-sm-6 col-form-label modal-text">Tour Type:</label>
-                            <fieldset id="tourType">
-                                <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn radio-btn-1 active text-nowrap">
-                                        <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked> City
-                                        Tour
-                                    </label>
-                                    <label class="btn radio-btn-2 text-nowrap">
-                                        <input type="radio" name="tourType" autocomplete="off" value="seasideTour"> Seaside Tour
-                                    </label>
+                    <div class="d-flex justify-content-center">
+                    <div class="row mx-auto d-flex justify-content-center">
+                        <div class="col-11 mx-auto">
+                            <div class="d-flex justify-content-start text-center">
+                                <div class="col-11 col-sm-6 ml-0 pl-0">
+                                    <h5 class="jumbotron-title text-center text-nowrap "> <span class="jumbotron-la"> L.A. </span>Bus Tours</h5>
                                 </div>
-                            </fieldset>
-                        </div>
-                        <div class="row form-group">
-                            <label class="col-sm-6 col-form-label modal-text">Extras:</label>
-                            <div class="col-6 btn-group">
-                                <div class="input-group-text checkbox-container">
-                                    <input type="checkbox" aria-label="Checkbox for following text input" name="celebTour"
-                                        value="Yes">
-                                    <label for="celebTour" class="pl-3">+ Celebrity Tour</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row form-group pt-3">
-                            <div class="col">
-                                <button type="submit" data-dismiss="modal" class="btn-modal btn-modal-cancel">Cancel</button>
-                                <button type="submit" class="btn-modal btn-modal-submit">Search</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <!-- After the jumbotron -->
-<div class="container-fluid">
-    <div class="row d-flex justify-content-center">
-        <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-0 pb-0">
-            <h1 class="display-4">The Best Bus Tours in L.A.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa ex rerum similique dolore! Possimus
-                quis sit architecto aut, beatae ut accusantium quasi dolore nobis asperiores minima atque neque eaque?
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, dolorum excepturi
-                suscipit, illo nesciunt, assumenda eius nulla placeat corrupti recusandae. Minus, id quisquam. Cum
-                necessitatibus eum inventore blanditiis adipisci exercitationem deserunt. Hic placeat quis nulla
-                exercitationem, facilis iure quisquam repellendus nisi eos, aut magnam, rem incidunt nemo inventore
-                dolore.
-            </p>
-        </div>
-    </div>
-</div>
-
-<!-- Three Pictures -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-11 mx-auto home-img-grid mt-0 pt-0">
-            <div class="row mx-auto px-5 text-center d-flex justify-content-center">
-                <div class="col-sm-6 col-lg-3 px-lg-1 mx-auto">
-                        <img src="/img/card-city.jpg" alt="" class="home-img-about home-img-about--1" />
-                </div>
-                <div class="col-sm-6 col-lg-3 p-lg-1 mx-auto d-none d-lg-block">
-                    <img src="/img/hollywoodpalm.jpg" alt="" class="home-img-about home-img-about--2" />
-                </div>
-                <div class="col-sm-6 col-lg-3 p-lg-1 mx-auto d-none d-sm-block">
-                    <img src="/img/santamonicacropped.png" alt="" class="home-img-about home-img-about--3" />
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <!-- more text here, under the 3 pictures, but above the cards -->
-<div class="container-fluid pt-5" id="home-card">
-    <div class="row d-flex justify-content-center">
-        <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-5 pb-5">
-            <h1 class="display-4">About Our Tours</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus odit itaque molestias aut
-                omnis eaque quas sint nihil ab earum eligendi repellendus laboriosam velit repudiandae possimus libero
-                magnam facilis suscipit accusamus, repellat magni. Aliquid facilis temporibus nobis repellat neque,
-                harum aspernatur ea magnam, in sapiente rerum ex omnis? Reiciendis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam doloremque in reprehenderit, saepe alias
-                iure incidunt rem quaerat sint ab odio quia sequi dolor dicta, distinctio tempore vitae nisi a obcaecati
-                nobis, labore omnis minima? Reprehenderit architecto quam eos eaque.</p>
-        </div>
-    </div>
-</div>
-
-    <!-- cards -->
-<div class="container-fluid">
-    <div class="row d-flex justify-content-center py-5">
-        <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-3 px-5 pl-xl-0 pb-5 pb-md-0">
-            <div class="card home-card mb-5">
-                <img src="/img/lacropped.jpg" alt="" class="img-fluid card-img">
-                <div class="card-body">
-                    <h5 class="card-title">City Tour</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
-                    <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-5">
-                            <div class="card-link-bottom">
-                                <a href="#" class="card-link" data-toggle="modal" data-target="#bookingModal">Book Now</a>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="card-link-bottom">
-                                <a href="citytour.html" class="card-link">Learn More &rarr;</a>
                             </div>
                         </div>
                     </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-11">
+                            <hr class="header-line">
+                        </div>
+                    </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-11 col-md-8 col-xl-10 mb-xl-0">
+                    <div>
+                        <h1 class="text-center m-4"> <span class="header-tour-descrip">City and Seaside Adventures in the Los Angeles Area</span></h1>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-3 px-5 pr-xl-0 pb-5 pb-md-0">
-            <div class="card home-card">
-                <img src="/img/card-seaside.jpg" alt="" class="img-fluid card-img">
-                <div class="card-body">
-                    <h5 class="card-title">Seaside Tour</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
+            <div class="row d-flex justify-content-center">
+                <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
+                    <button type="button" class="btn btn-secondary btn-main"><a href="#home-card" class="btn-text text-nowrap text-center">Learn More
+                            &rarr;</a></button>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-                <div class="card-body">
-                    <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-5">
-                            <div class="card-link-bottom">
-                                <a href="#" class="card-link" data-toggle="modal" data-target="#bookingModal">Book Now</a>
+                <p class="my-5"></p>
+            </div>  
+        </div>
+    </header>
+
+    <div id="bookingModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center">Book a Tour</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="row form-group">
+                                <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of
+                                    Passengers</label>
+                                <div class="col">
+                                    <input type="number" class="form-control form-control-sm" id="num-passengers"
+                                    placeholder="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="card-link-bottom">
-                                <a href="#" class="card-link">Learn More &rarr;</a>
+                            <div class="row form-group">
+                                <label for="date" class="col col-sm-6 col-form-label modal-text">Date:</label>
+                                <div class="col-12 col-sm-6">
+                                    <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
+                                </div>
                             </div>
-                        </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label modal-text">Tour Type:</label>
+                                <fieldset id="tourType">
+                                    <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn radio-btn-1 active text-nowrap">
+                                            <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked> City
+                                            Tour
+                                        </label>
+                                        <label class="btn radio-btn-2 text-nowrap">
+                                            <input type="radio" name="tourType" autocomplete="off" value="seasideTour"> Seaside Tour
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label modal-text">Extras:</label>
+                                <div class="col-6 btn-group">
+                                    <div class="input-group-text checkbox-container">
+                                        <input type="checkbox" aria-label="Checkbox for following text input" name="celebTour"
+                                            value="Yes">
+                                        <label for="celebTour" class="pl-3">+ Celebrity Tour</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group pt-3">
+                                <div class="col">
+                                    <button type="submit" data-dismiss="modal" class="btn-modal btn-modal-cancel">Cancel</button>
+                                    <button type="submit" class="btn-modal btn-modal-submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<!-- Bus Background Image -->
-<div class="bus-background pt-5">
     <div class="container-fluid">
-        <div class="row carousel-box comment-bottom text-center p-0 p-lg-5 ">
-            <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-4 carousel-box-child mx-auto p-0">
-                <div class="comment-box-countainer">
-                    <div class="comment-box">
-                        <div class="carousel slide pb-5 px-5" id="carousel-reviews" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-reviews" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-reviews" data-slide-to="1"></li>
-                                <li data-target="#carousel-reviews" data-slide-to="2"></li>
-                                <li data-target="#carousel-reviews" data-slide-to="3"></li>
-                            </ol>
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="d-block">
-                                        <div class="m-0 m-md-1 mb-3 pt-0">
-                                            <h2 class="pt-0 testimonial-heading pb-lg-4 ">Excellent!</h2>
-                                            <div class="p-1">
-                                                <p>My rating:</p>
-                                            </div>
-                                            <div class="star p-1">
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="p-1">It was so much fun! We got to see so many places and took so
-                                                many photos to never forget!</p>
-                                        </div>
-                                        <div class="p-1 pt-3">
-                                            <i>Tina from Salt Lake City, UT</i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block">
-                                        <div class="m-0 m-md-1 mb-3 pt-0">
-                                            <h2 class="pt-0 testimonial-heading pb-lg-4 ">A Trip to Never Forget</h2>
-                                            <div class="p-1">
-                                                <p>My rating:</p>
-                                            </div>
-                                            <div class="star p-1">
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="p-1">The kids had a great time. My only regret is that the time
-                                                went by too fast.</p>
-                                        </div>
-                                        <div class="p-1 pt-3">
-                                            <i>Justin from Seattle, WA</i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block">
-                                        <div class="m-0 m-md-1 mb-3 pt-0">
-                                            <h2 class="pt-0 testimonial-heading pb-lg-4 ">We Had a Blast!</h2>
-                                            <div class="p-1">
-                                                <p>My rating:</p>
-                                            </div>
-                                            <div class="star p-1">
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="p-1">So glad we booked this tour, we got to see so many places
-                                                around the city.</p>
-                                        </div>
-                                        <div class="p-1 pt-3">
-                                            <i>Jennifer from Boston, MA</i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block">
-                                        <div class="m-0 m-md-1 mb-3 pt-0">
-                                            <h2 class="pt-0 testimonial-heading pb-lg-4 ">Worth It</h2>
-                                            <div class="p-1">
-                                                <p>My rating:</p>
-                                            </div>
-                                            <div class="star p-1">
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                            </div>
-                                            <p class="p-1">My family and I are considering moving to L.A., so this tour
-                                                was great to get a sense of what the area has to offer.</p>
-                                        </div>
-                                        <div class="p-1 pt-3">
-                                            <i>Tony from San Antonio, TX</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carousel-reviews" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel-reviews" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div><!--  comment box -->
-                </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-0 pb-0">
+                <h1 class="display-4">The Best Bus Tours in L.A.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa ex rerum similique dolore! Possimus
+                    quis sit architecto aut, beatae ut accusantium quasi dolore nobis asperiores minima atque neque eaque?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, dolorum excepturi
+                    suscipit, illo nesciunt, assumenda eius nulla placeat corrupti recusandae. Minus, id quisquam. Cum
+                    necessitatibus eum inventore blanditiis adipisci exercitationem deserunt. Hic placeat quis nulla
+                    exercitationem, facilis iure quisquam repellendus nisi eos, aut magnam, rem incidunt nemo inventore
+                    dolore.
+                </p>
             </div>
         </div>
     </div>
-</div>
 
-<footer class="site-footer d-block">
     <div class="container-fluid">
-        <div class="row px-0 pt-4 d-flex justify-content-center mx-0">
-            <div class="col-5 col-md-4">
-                <div class="d-flex justify-content-start">
-                    <div class="text-left">
-                <h5 class="footer-title pb-3">Links</h5>
-                <ul class="list-unstyled footer-item">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About</a></li>
-                    <li><a href="citytour.html">City Tour</a></li>
-                    <li><a href="seasidetour.html">Seaside Tour</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                </ul>
-            </div>
-            </div>
-            </div>
-            <div class="col-7 col-sm-5 pl-0 ml-0 pr-3">
-                <div class="d-flex justify-content-end">
-                    <div class="text-right">
-                        <h5 class="footer-title pb-3">Our Location:</h5>
-                        <p class="footer-item">123 Beyond St., Ste 456, </p>
-                        <p class="footer-item p-1">Beverly Hills, CA 90210</p>
-                        <br>
-                        <a role="button" class="contact-links" href="tel:+12345678901"><i class="fa fa-phone footer-p"></i>
-                            1-234-567-8901</a><br />
-                        <a role="button" class="contact-links" href="mailto:office@labustours.com"><i class="fa fa-envelope-o footer-p"></i>
-                            office@labustours.com</a><br />
-                        <a role="button" class="contact-links" href="tel:+19876543210"><i class="fa fa-fax footer-p"></i>
-                            1-987-654-3210</a><br />
+        <div class="row">
+            <div class="col-11 mx-auto home-img-grid mt-0 pt-0">
+                <div class="row mx-auto px-5 text-center d-flex justify-content-center">
+                    <div class="col-sm-6 col-lg-3 px-lg-1 mx-auto">
+                            <img src="/img/card-city.jpg" alt="Downtown L.A." class="home-img-about home-img-about--1" />
+                    </div>
+                    <div class="col-sm-6 col-lg-3 p-lg-1 mx-auto d-none d-lg-block">
+                        <img src="/img/hollywoodpalm.jpg" alt="The Hollywood Sign" class="home-img-about home-img-about--2" />
+                    </div>
+                    <div class="col-sm-6 col-lg-3 p-lg-1 mx-auto d-none d-sm-block">
+                        <img src="/img/santamonicacropped.png" alt="Santa Monica Route 66 End of the Trail Sign" class="home-img-about home-img-about--3" />
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid pt-5" id="home-card">
         <div class="row d-flex justify-content-center">
-            <div class="col-7">
-                <hr class="">
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-sm-6 text-center pb-2">
-                <a class="btn btn-social-icon btn-instagram m-3" href="http://instagram.com/"><i
-                        class="fa fa-instagram"></i></a>
-                <a class="btn btn-social-icon btn-facebook m-3" href="http://facebook.com/"><i
-                        class="fa fa-facebook"></i></a>
-                <a class="btn btn-social-icon btn-twitter m-3" href="http://twitter.com/"><i
-                        class="fa fa-twitter"></i></a>
-                <a class="btn btn-social-icon btn-google m-3" href="http://youtube.com/"><i
-                        class="fa fa-youtube"></i></a>
-            </div>
-        </div>
-        <div class="row pl-0 ml-0 pb-1">
-            <div class="col-sm-12 pb-1 copyright">
-                <p>&copy; Copyright 2022. All Rights Reserved.</p>
+            <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-5 pb-5">
+                <h1 class="display-4">About Our Tours</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus odit itaque molestias aut
+                    omnis eaque quas sint nihil ab earum eligendi repellendus laboriosam velit repudiandae possimus libero
+                    magnam facilis suscipit accusamus, repellat magni. Aliquid facilis temporibus nobis repellat neque,
+                    harum aspernatur ea magnam, in sapiente rerum ex omnis? Reiciendis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam doloremque in reprehenderit, saepe alias
+                    iure incidunt rem quaerat sint ab odio quia sequi dolor dicta, distinctio tempore vitae nisi a obcaecati
+                    nobis, labore omnis minima? Reprehenderit architecto quam eos eaque.</p>
             </div>
         </div>
     </div>
-</footer>
 
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center py-5">
+            <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-3 px-5 pl-xl-0 pb-5 pb-md-0">
+                <div class="card home-card mb-5">
+                    <img src="/img/lacropped.jpg" alt="Downtown L.A." class="img-fluid card-img">
+                    <div class="card-body">
+                        <h5 class="card-title">City Tour</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-body">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-5">
+                                <div class="card-link-bottom">
+                                    <a href="#" class="card-link" data-toggle="modal" data-target="#bookingModal">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-link-bottom">
+                                    <a href="citytour.html" class="card-link">Learn More &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-3 px-5 pr-xl-0 pb-5 pb-md-0">
+                <div class="card home-card">
+                    <img src="/img/card-seaside.jpg" alt="The Beach with Palm Trees" class="img-fluid card-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Seaside Tour</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-body">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-5">
+                                <div class="card-link-bottom">
+                                    <a href="#" class="card-link" data-toggle="modal" data-target="#bookingModal">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-link-bottom">
+                                    <a href="#" class="card-link">Learn More &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4"></div>
+
+    <div class="bus-background pt-5">
+        <div class="container-fluid">
+            <div class="row carousel-box comment-bottom text-center p-0 p-lg-5 ">
+                <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-4 carousel-box-child mx-auto p-0">
+                    <div class="comment-box-countainer">
+                        <div class="comment-box">
+                            <div class="carousel slide pb-5 px-5" id="carousel-reviews" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-reviews" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-reviews" data-slide-to="1"></li>
+                                    <li data-target="#carousel-reviews" data-slide-to="2"></li>
+                                    <li data-target="#carousel-reviews" data-slide-to="3"></li>
+                                </ol>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-block">
+                                            <div class="m-0 m-md-1 mb-3 pt-0">
+                                                <h2 class="pt-0 testimonial-heading pb-lg-4 ">Excellent!</h2>
+                                                <div class="p-1">
+                                                    <p>My rating:</p>
+                                                </div>
+                                                <div class="star p-1">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="p-1">It was so much fun! We got to see so many places and took so
+                                                    many photos to never forget!</p>
+                                            </div>
+                                            <div class="p-1 pt-3">
+                                                <i>Tina from Salt Lake City, UT</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-block">
+                                            <div class="m-0 m-md-1 mb-3 pt-0">
+                                                <h2 class="pt-0 testimonial-heading pb-lg-4 ">A Trip to Never Forget</h2>
+                                                <div class="p-1">
+                                                    <p>My rating:</p>
+                                                </div>
+                                                <div class="star p-1">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="p-1">The kids had a great time. My only regret is that the time
+                                                    went by too fast.</p>
+                                            </div>
+                                            <div class="p-1 pt-3">
+                                                <i>Justin from Seattle, WA</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-block">
+                                            <div class="m-0 m-md-1 mb-3 pt-0">
+                                                <h2 class="pt-0 testimonial-heading pb-lg-4 ">We Had a Blast!</h2>
+                                                <div class="p-1">
+                                                    <p>My rating:</p>
+                                                </div>
+                                                <div class="star p-1">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="p-1">So glad we booked this tour, we got to see so many places
+                                                    around the city.</p>
+                                            </div>
+                                            <div class="p-1 pt-3">
+                                                <i>Jennifer from Boston, MA</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-block">
+                                            <div class="m-0 m-md-1 mb-3 pt-0">
+                                                <h2 class="pt-0 testimonial-heading pb-lg-4 ">Worth It</h2>
+                                                <div class="p-1">
+                                                    <p>My rating:</p>
+                                                </div>
+                                                <div class="star p-1">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="p-1">My family and I are considering moving to L.A., so this tour
+                                                    was great to get a sense of what the area has to offer.</p>
+                                            </div>
+                                            <div class="p-1 pt-3">
+                                                <i>Tony from San Antonio, TX</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-reviews" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-reviews" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer d-block">
+        <div class="container-fluid">
+            <div class="row px-0 pt-4 d-flex justify-content-center mx-0">
+                <div class="col-5 col-md-4">
+                    <div class="d-flex justify-content-start">
+                        <div class="text-left">
+                            <h5 class="footer-title pb-3">Links</h5>
+                            <ul class="list-unstyled footer-item">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About</a></li>
+                                <li><a href="citytour.html">City Tour</a></li>
+                                <li><a href="seasidetour.html">Seaside Tour</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="contactus.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 col-sm-5 pl-0 ml-0 pr-3">
+                    <div class="d-flex justify-content-end">
+                        <div class="text-right">
+                            <h5 class="footer-title pb-3">Our Location:</h5>
+                            <p class="footer-item">123 Beyond St., Ste 456, </p>
+                            <p class="footer-item p-1">Beverly Hills, CA 90210</p>
+                            <br>
+                            <a role="button" class="contact-links" href="tel:+12345678901"><i class="fa fa-phone footer-p"></i>
+                                1-234-567-8901</a><br />
+                            <a role="button" class="contact-links" href="mailto:office@labustours.com"><i class="fa fa-envelope-o footer-p"></i>
+                                office@labustours.com</a><br />
+                            <a role="button" class="contact-links" href="tel:+19876543210"><i class="fa fa-fax footer-p"></i>
+                                1-987-654-3210</a><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-7">
+                    <hr class="">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-6 text-center pb-2">
+                    <a class="btn btn-social-icon btn-instagram m-3" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook m-3" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter m-3" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google m-3" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="row pl-0 ml-0 pb-1">
+                <div class="col-sm-12 pb-1 copyright">
+                    <p>&copy; Copyright 2022. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

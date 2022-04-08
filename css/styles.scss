@@ -75,7 +75,7 @@ table {
         margin-right: 0px;
         border: inherit;
         border-radius: 5px;
-        overflow: hidden;
+        // overflow: hidden;
 
         .dropdown {
             display: none;
@@ -92,11 +92,13 @@ table {
             margin-bottom: 2px;
             color: white;
             font-size: 2.7rem;
+            transition: all .4s;
 
             &:hover {
                 background-position: right;
                 padding: 2px;
                 color: black;
+                transform: translateX(1rem);
             }
         }
     }
@@ -123,7 +125,7 @@ table {
     padding: inherit;
     margin: inherit;
     margin-right: 2px;
-    overflow: hidden;
+    // overflow: hidden;
     border: none;
     
     &:hover {
@@ -137,10 +139,12 @@ table {
         transition: .5s ease-in;
         color: white;
         margin-bottom: 4px;
+        transition: all .4s;
         
         &:hover {
             color: black;
             background-position: right;
+            transform: translateX(1rem);
         }
     }
 }
@@ -266,12 +270,12 @@ $gradient-light), url(/img/card-city.jpg);
 }
 
 
-.center-vertically {
+.wrapper-1 {
     margin: 0;
     position: relative;
 }
 
-.center-vertically-child {
+.wrapper-2 {
     margin-top: 45vh;
     position: absolute;
     top: 50%;
