@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
@@ -45,11 +53,11 @@
 
 </head>
 
-    <div class="container-fluid">
+    <nav class="container-fluid">
         <div class="sticky-top">
             <div class="row sticky-nav-dup p-auto d-flex justify-content-center" id="sticky-nav">
                 <div class="col-12 d-flex justify-content-end">
-                    <nav class="navbar navbar-expand-lg navbar-light pt-0">
+                    <div class="navbar navbar-expand-lg navbar-light pt-0">
                         <a class="navbar-brand align-self-start" href="index.html"><img src="img/l.a.bustourslogocropped.png" alt="L.A. Bus Tours Co. Logo" height="60"
                                 width="60"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -90,11 +98,11 @@
                                 </li>
                             </ul>
                         </div>
-                    </nav>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
 
     <header class="jumbotron jumbotron-fluid jumbotron-citytour pt-0 mt-0 pr-0 mr-0 mt-0">
         <div class="wrapper-1">
@@ -105,7 +113,7 @@
                         <div class="col-11 mx-auto">
                             <div class="d-flex justify-content-start text-center">
                                 <div class="col-11 col-sm-6 ml-0 pl-0">
-                                    <h5 class="jumbotron-title text-center text-nowrap "> <span class="jumbotron-la"> L.A. </span>Bus Tours</h5>
+                                    <h1 class="jumbotron-title text-center text-nowrap "> <span class="jumbotron-la"> L.A. </span>Bus Tours</h1>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +127,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-11 col-md-8 col-xl-10 mb-xl-0">
                     <div>
-                        <h1 class="text-center m-4"> <span class="header-tour-descrip">City and Seaside Adventures in the Los Angeles Area</span></h1>
+                        <p class="text-center m-4"> <span class="header-tour-descrip">City and Seaside Adventures in the Los Angeles Area</span></p>
                     </div>
                 </div>
             </div>
@@ -137,7 +145,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title text-center">Book a Tour</h3>
+                    <h2 class="modal-title text-center">Book a Tour</h2>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -147,7 +155,7 @@
                                 <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of
                                     Passengers</label>
                                 <div class="col">
-                                    <input type="number" class="form-control form-control-sm" id="num-passengers"
+                                    <input type="number" name="num-passengers" class="form-control form-control-sm" id="num-passengers"
                                     placeholder="">
                                 </div>
                             </div>
@@ -194,10 +202,12 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+<main>
+
+    <section class="container-fluid">
         <div class="row d-flex justify-content-center">
             <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-0 pb-0">
-                <h1 class="display-4">The Best Bus Tours in L.A.</h1>
+                <h2 class="display-4">The Best Bus Tours in L.A.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa ex rerum similique dolore! Possimus
                     quis sit architecto aut, beatae ut accusantium quasi dolore nobis asperiores minima atque neque eaque?
                 </p>
@@ -209,9 +219,9 @@
                 </p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid">
+    <section class="container-fluid">
         <div class="row">
             <div class="col-11 mx-auto home-img-grid mt-0 pt-0">
                 <div class="row mx-auto px-5 text-center d-flex justify-content-center">
@@ -227,12 +237,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid pt-5" id="home-card">
+    <section class="container-fluid pt-5" id="home-card">
         <div class="row d-flex justify-content-center">
             <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-5 pb-5">
-                <h1 class="display-4">About Our Tours</h1>
+                <h2 class="display-4">About Our Tours</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus odit itaque molestias aut
                     omnis eaque quas sint nihil ab earum eligendi repellendus laboriosam velit repudiandae possimus libero
                     magnam facilis suscipit accusamus, repellat magni. Aliquid facilis temporibus nobis repellat neque,
@@ -242,15 +252,15 @@
                     nobis, labore omnis minima? Reprehenderit architecto quam eos eaque.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid">
+    <section class="container-fluid">
         <div class="row d-flex justify-content-center py-5">
             <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-3 px-5 pl-xl-0 pb-5 pb-md-0">
-                <div class="card home-card mb-5">
+                <article class="card home-card mb-5">
                     <img src="/img/lacropped.jpg" alt="Downtown L.A." class="img-fluid card-img">
                     <div class="card-body">
-                        <h5 class="card-title">City Tour</h5>
+                        <h3 class="card-title">City Tour</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                             content.</p>
                     </div>
@@ -273,13 +283,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
             <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-3 px-5 pr-xl-0 pb-5 pb-md-0">
-                <div class="card home-card">
+                <article class="card home-card">
                     <img src="/img/card-seaside.jpg" alt="The Beach with Palm Trees" class="img-fluid card-img">
                     <div class="card-body">
-                        <h5 class="card-title">Seaside Tour</h5>
+                        <h3 class="card-title">Seaside Tour</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                             content.</p>
                     </div>
@@ -302,14 +312,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="p-4"></div>
 
-    <div class="bus-background pt-5">
+    <section class="bus-background pt-5">
         <div class="container-fluid">
             <div class="row carousel-box comment-bottom text-center p-0 p-lg-5 ">
                 <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-4 carousel-box-child mx-auto p-0">
@@ -324,10 +334,10 @@
                                 </ol>
 
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active">
+                                    <article class="carousel-item active">
                                         <div class="d-block">
                                             <div class="m-0 m-md-1 mb-3 pt-0">
-                                                <h2 class="pt-0 testimonial-heading pb-lg-4 ">Excellent!</h2>
+                                                <h6 class="pt-0 testimonial-heading pb-lg-4 ">Excellent!</h6>
                                                 <div class="p-1">
                                                     <p>My rating:</p>
                                                 </div>
@@ -345,11 +355,11 @@
                                                 <i>Tina from Salt Lake City, UT</i>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="carousel-item">
+                                    </article>
+                                    <article class="carousel-item">
                                         <div class="d-block">
                                             <div class="m-0 m-md-1 mb-3 pt-0">
-                                                <h2 class="pt-0 testimonial-heading pb-lg-4 ">A Trip to Never Forget</h2>
+                                                <h6 class="pt-0 testimonial-heading pb-lg-4 ">A Trip to Never Forget</h6>
                                                 <div class="p-1">
                                                     <p>My rating:</p>
                                                 </div>
@@ -367,11 +377,11 @@
                                                 <i>Justin from Seattle, WA</i>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="carousel-item">
+                                    </article>
+                                    <article class="carousel-item">
                                         <div class="d-block">
                                             <div class="m-0 m-md-1 mb-3 pt-0">
-                                                <h2 class="pt-0 testimonial-heading pb-lg-4 ">We Had a Blast!</h2>
+                                                <h6 class="pt-0 testimonial-heading pb-lg-4 ">We Had a Blast!</h6>
                                                 <div class="p-1">
                                                     <p>My rating:</p>
                                                 </div>
@@ -389,11 +399,11 @@
                                                 <i>Jennifer from Boston, MA</i>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="carousel-item">
+                                    </article>
+                                    <article class="carousel-item">
                                         <div class="d-block">
                                             <div class="m-0 m-md-1 mb-3 pt-0">
-                                                <h2 class="pt-0 testimonial-heading pb-lg-4 ">Worth It</h2>
+                                                <h6 class="pt-0 testimonial-heading pb-lg-4 ">Worth It</h6>
                                                 <div class="p-1">
                                                     <p>My rating:</p>
                                                 </div>
@@ -411,7 +421,7 @@
                                                 <i>Tony from San Antonio, TX</i>
                                             </div>
                                         </div>
-                                    </div>
+                                    </article>
                                 </div>
                                 <a class="carousel-control-prev" href="#carousel-reviews" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -427,7 +437,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+</main>
 
     <footer class="site-footer d-block">
         <div class="container-fluid">
@@ -435,7 +447,7 @@
                 <div class="col-5 col-md-4">
                     <div class="d-flex justify-content-start">
                         <div class="text-left">
-                            <h5 class="footer-title pb-3">Links</h5>
+                            <h2 class="footer-title pb-3">Links</h2>
                             <ul class="list-unstyled footer-item">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="aboutus.html">About</a></li>
@@ -450,7 +462,7 @@
                 <div class="col-7 col-sm-5 pl-0 ml-0 pr-3">
                     <div class="d-flex justify-content-end">
                         <div class="text-right">
-                            <h5 class="footer-title pb-3">Our Location:</h5>
+                            <h2 class="footer-title pb-3">Our Location:</h2>
                             <p class="footer-item">123 Beyond St., Ste 456, </p>
                             <p class="footer-item p-1">Beverly Hills, CA 90210</p>
                             <br>

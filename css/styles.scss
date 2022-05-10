@@ -483,7 +483,7 @@ input[type=checkbox]:checked + label {
     padding: 10px;
 }
 
-.home-about > h1 {
+.home-about > h2 {
     padding: 10px;
     font-weight: bold;
 }
@@ -931,14 +931,14 @@ thead {
     background-color: rgba(94, 91, 89, .06);
 }
 
-.faq-card .card-header h4 *, .faq-card-2 .card-header h4 * {
+.faq-card .card-header h3 *, .faq-card-2 .card-header h3 * {
     color: $font-dark; 
     font-size: $font-size-small-1;
     font-family: sans-serif;
     text-decoration: none;
 }
 
-.faq-card .card-header h4 *:hover, .faq-card-2 .card-header h4 *:hover  {
+.faq-card .card-header h3 *:hover, .faq-card-2 .card-header h3 *:hover  {
     color: rgba(227, 39, 39, .70);
     transition: .1s ease-in-out;
 }
