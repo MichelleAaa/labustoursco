@@ -41,25 +41,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.sticky-nav-dup {
+.sticky-nav {
   height: 8vh;
   width: 100vw;
   background-color: transparent;
   padding-top: 4vh;
   position: fixed; }
-  .sticky-nav-dup .navbar-collapse.collapsing {
+  .sticky-nav .navbar-collapse.collapsing {
     transition: height 0.0s ease; }
-  .sticky-nav-dup .navbar-collapse.show {
+  .sticky-nav .navbar-collapse.show {
     margin-top: 9px;
     margin-left: 0px;
     margin-right: 0px;
     border: inherit;
     border-radius: 5px; }
-    .sticky-nav-dup .navbar-collapse.show .dropdown {
+    .sticky-nav .navbar-collapse.show .dropdown {
       display: none; }
-    .sticky-nav-dup .navbar-collapse.show .d-none {
+    .sticky-nav .navbar-collapse.show .d-none {
       display: block !important; }
-    .sticky-nav-dup .navbar-collapse.show a {
+    .sticky-nav .navbar-collapse.show a {
       background: linear-gradient(to right, rgba(227, 39, 39, 0.45) 50%, rgba(255, 255, 255, 0.75) 50%) left;
       background-size: 220%;
       transition: .5s ease-out;
@@ -69,14 +69,14 @@ table {
       color: white;
       font-size: 2.7rem;
       transition: all .4s; }
-      .sticky-nav-dup .navbar-collapse.show a:hover {
+      .sticky-nav .navbar-collapse.show a:hover {
         background-position: right;
         padding: 2px;
         color: black;
         transform: translateX(1rem); }
 
 @media only screen and (min-width: 992px) {
-  .sticky-nav-dup .navbar-collapse.show a {
+  .sticky-nav .navbar-collapse.show a {
     background-image: unset;
     background: transparent;
     color: inherit;
@@ -117,12 +117,10 @@ table {
   overflow: hidden;
   display: block;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg); }
 
-.jumbotron-home {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(/img/downtownla.jpg); }
-
-.jumbotron-la {
+.jumbotron-title-subtext {
   align-self: center;
   font-family: "Roboto", sans-serif;
   color: #565656;
@@ -134,9 +132,6 @@ table {
   display: inline-flex;
   align-items: center;
   vertical-align: middle; }
-
-.jumbotron-citytour {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(/img/card-city.jpg); }
 
 .navbar-icon-title {
   text-align: center;
@@ -168,45 +163,37 @@ table {
   color: #565656;
   text-shadow: 3px 3px rgba(255, 255, 255, 0.65); }
 
-.header-tour-descrip2 {
-  color: #565656;
-  font-weight: bold;
-  font-family: "Lato", sans-serif;
-  text-shadow: white; }
-
 .header-line {
   background-color: #e32727; }
 
 @media only screen and (min-width: 320px) {
   .jumbotron-title {
     font-size: 5.5rem; }
-  .header-tour-descrip2, .header-tour-descrip {
+  .jumbotron-subtitle {
     font-size: 2.3rem; }
-  .jumbotron-la {
+  .jumbotron-title-subtext {
     font-size: 1.6rem; } }
 
 @media only screen and (min-width: 768px) {
   .jumbotron-title {
     font-size: 7rem; }
-  .header-tour-descrip2, .header-tour-descrip {
+  .jumbotron-subtitle {
     font-size: 2.7rem; }
-  .jumbotron-la {
+  .jumbotron-title-subtext {
     font-size: 2.8rem; } }
 
 @media only screen and (min-width: 992px) {
   .jumbotron-title {
     font-size: 9rem; }
-  .header-tour-descrip2 {
-    font-size: 2.7rem; }
-  .jumbotron-la {
+  .jumbotron-title-subtext {
     font-size: 3.5rem; } }
 
-.wrapper-1 {
+.jumbotron-fluid .container-fluid {
   margin: 0;
   position: relative; }
 
-.wrapper-2 {
-  margin-top: 45vh;
+.jumbotron-content {
+  margin-top: 41vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -362,22 +349,22 @@ input[type=checkbox]:checked + label {
   color: rgba(227, 39, 39, 0.7);
   text-shadow: 1px 1px 1px #f5a6a6; }
 
-.header-tour-descrip {
+.jumbotron-subtitle {
   color: #565656;
   font-weight: bold;
   font-family: "Lato", sans-serif;
   text-shadow: white; }
 
-.home-about {
+.text-detail {
   font-size: 2rem;
   color: #565656;
   font-family: "Roboto", sans-serif; }
 
-.home-about > p {
+.text-detail > p {
   margin: 5px;
   padding: 10px; }
 
-.home-about > h2 {
+.text-detail > h2 {
   padding: 10px;
   font-weight: bold; }
 
@@ -392,7 +379,7 @@ input[type=checkbox]:checked + label {
   margin: 0;
   padding: 0; }
 
-.home-img-about {
+.home-img-item {
   height: 60%;
   width: 100%;
   object-fit: cover;
@@ -405,20 +392,20 @@ input[type=checkbox]:checked + label {
   transition: transform .1s ease-in-out;
   filter: opacity(85%); }
 
-.home-img-about:hover {
+.home-img-item:hover {
   transform: scale(1.2);
   filter: opacity(100%); }
 
 .home-img-grid-row {
   height: 200px; }
 
-.home-img-about--1 {
+.home-img-item--1 {
   margin: 60% -60% 0 0; }
 
-.home-img-about--2 {
+.home-img-item--2 {
   margin: 40% -40% 0 0; }
 
-.home-img-about--3 {
+.home-img-item--3 {
   margin: 0 0 0 0; }
 
 .home-card {
@@ -491,15 +478,16 @@ input[type=checkbox]:checked + label {
 @media only screen and (min-width: 320px) {
   .celebrity-homes > p {
     font-size: 1.7rem; }
-  .celebrity-homes > h1 {
-    font-size: 3rem; } }
+  .celebrity-homes > h2 {
+    font-size: 2.5rem;
+    padding-bottom: 4px; } }
 
 @media only screen and (min-width: 768px) {
   .celebrity-homes > p {
     font-size: 2rem;
     margin: 5px;
     padding: 10px; }
-  .celebrity-homes > h1 {
+  .celebrity-homes > h2 {
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2; } }
@@ -514,22 +502,15 @@ input[type=checkbox]:checked + label {
   -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%); }
 
-.carousel-box {
-  height: 100vh;
-  position: relative; }
-
-.carousel-box-child {
+.carousel-wrapper {
   color: rgba(255, 255, 255, 0.95);
-  height: 43vh;
-  width: 30vw;
-  margin-top: 28vh;
   font-size: 1.7rem;
   background-color: rgba(86, 86, 86, 0.8);
   border: 2px solid gray;
   border-radius: 10px;
   position: relative; }
 
-.carousel-box-child::after {
+.carousel-wrapper:after {
   content: '';
   height: 10vh;
   display: block;
@@ -542,17 +523,6 @@ input[type=checkbox]:checked + label {
   border-left: solid 2em rgba(86, 86, 86, 0.8);
   border-right: solid 2em transparent;
   border-bottom: solid 2em transparent; }
-
-.comment-box-countainer {
-  position: relative; }
-
-.comment-box {
-  position: absolute;
-  margin-top: 20vh;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%); }
 
 .star {
   color: #e2c661; }
@@ -606,9 +576,6 @@ footer a, .contact-links, .footer-item, .copyright {
   margin: 0;
   padding: 0; }
 
-.tour-details-box {
-  border-radius: 10px; }
-
 .table {
   box-shadow: 1rem 1rem 1rem rgba(26, 20, 35, 0.35);
   border: 1px solid gray; }
@@ -646,25 +613,25 @@ thead {
   max-width: 100%;
   height: auto; }
 
-.about-text {
+.section-text {
   font-size: 1.3rem;
   color: #565656;
   font-family: "Roboto", sans-serif; }
 
-.about-heading-text {
+.section-heading {
   font-weight: bold;
   color: rgba(227, 39, 39, 0.7); }
 
 @media only screen and (min-width: 320px) {
-  .about-text {
+  .section-text {
     font-size: 1.4rem; }
-  .about-heading-text {
+  .section-heading {
     font-size: 1.7rem; } }
 
 @media only screen and (min-width: 768px) {
-  .about-text {
+  .section-text {
     font-size: 1.7rem; }
-  .about-heading-text {
+  .section-heading {
     font-size: 2rem; } }
 
 .row-content {

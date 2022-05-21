@@ -53,8 +53,8 @@
 </head>
 
     <nav class="container-fluid">
-        <div class="sticky-top">
-            <div class="row sticky-nav-dup p-auto d-flex justify-content-center" id="sticky-nav">
+        <div class='sticky-top'>
+            <div class="row sticky-nav p-auto d-flex justify-content-center" id="sticky-nav">
                 <div class="col-12 d-flex justify-content-end">
                     <div class="navbar navbar-expand-lg navbar-light pt-0">
                         <a class="navbar-brand align-self-start" href="index.html"><img
@@ -103,34 +103,31 @@
         </div>
     </nav>
 
-    <header class="jumbotron jumbotron-fluid jumbotron-citytour pt-0 mt-0 pr-0 mr-0 mt-0">
-        <div class="wrapper-1">
-            <div class="wrapper-2">
-                <div class="container-fluid">
-                    <div class="row mx-auto d-flex justify-content-center">
-                        <div class="col-12 mx-auto">
-                            <h1 class="jumbotron-title text-nowrap">City Tour</h1>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="jumbotron-content">
+                <div class="row mx-auto d-flex justify-content-center">
+                    <div class="col-12 mx-auto">
+                        <h1 class="jumbotron-title text-nowrap">City Tour</h1>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-11">
+                        <hr class="header-line">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-11 col-sm-8 col-xl-9 mb-xl-0">
+                        <div>
+                            <p class="text-center m-4 jumbotron-subtitle">Downtown L.A., Santa Monica, Hollywood, and Beverly Hills</p>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-11">
-                            <hr class="header-line">
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-11 col-sm-8 col-xl-9 mb-xl-0">
-                            <div>
-                                <p class="text-center m-4"> <span class="header-tour-descrip2">Downtown L.A., Santa Monica, Hollywood, and Beverly Hills</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
-                            <button type="button" class="btn btn-secondary btn-main" data-toggle="modal" data-target="#bookingModal">
-                                <a href="#" class="btn-text text-nowrap text-center">Reserve Now &rarr;</a>
-                            </button>
-                        </div>
-                        <p class="my-5"></p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
+                        <button type="button" class="btn btn-secondary btn-main" data-toggle="modal" data-target="#bookingModal">
+                            <a href="#" class="btn-text text-nowrap text-center">Reserve Now &rarr;</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -148,11 +145,9 @@
                     <div class="container-fluid">
                         <form>
                             <div class="row form-group">
-                                <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of
-                                    Passengers</label>
+                                <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of Passengers</label>
                                 <div class="col">
-                                    <input type="number" name="num-passengers"  class="form-control form-control-sm" id="num-passengers"
-                                        placeholder="">
+                                    <input type="number" name="num-passengers"  class="form-control form-control-sm" id="num-passengers">
                                 </div>
                             </div>
                             <div class="row form-group">
@@ -167,8 +162,7 @@
                                     <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn radio-btn-1 active text-nowrap">
                                             <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked>
-                                            City
-                                            Tour
+                                            City Tour
                                         </label>
                                         <label class="btn radio-btn-2 text-nowrap">
                                             <input type="radio" name="tourType" autocomplete="off" value="seasideTour">
@@ -205,32 +199,26 @@
     
     <section class="container-fluid">
         <div class="row d-flex justify-content-center">
-            <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-0 pb-0">
+            <div class="col-11 col-sm-10 col-lg-8 text-center text-detail mt-2 pt-2 mb-0 pb-0">
                 <h2 class="display-4">Lorem ipsum dolor sit amet</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa ex rerum similique dolore!
-                    Possimus
-                    quis sit architecto aut, beatae ut accusantium quasi dolore nobis asperiores minima atque neque
-                    eaque?
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsa ex rerum similique dolore! Possimus quis sit architecto aut, beatae ut accusantium quasi dolore nobis asperiores minima atque neque eaque?
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, dolorum excepturi
-                    suscipit, illo nesciunt, assumenda eius nulla placeat corrupti recusandae. Minus, id quisquam. Cum
-                    necessitatibus eum inventore blanditiis adipisci exercitationem deserunt. Hic placeat quis nulla
-                    exercitationem, facilis iure quisquam repellendus nisi eos, aut magnam, rem incidunt nemo inventore
-                    dolore.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur, dolorum excepturi suscipit, illo nesciunt, assumenda eius nulla placeat corrupti recusandae. Minus, id quisquam. Cum necessitatibus eum inventore blanditiis adipisci exercitationem deserunt. Hic placeat quis nulla exercitationem, facilis iure quisquam repellendus nisi eos, aut magnam, rem incidunt nemo inventore dolore.
+                </p>
             </div>
         </div>
     </section>
 
     <section class="container">
         <div class="row d-flex justify-content-center py-5 px-2">
-            <div class="col-9 col-sm-8 col-md-5 col-lg-4 col-xl-3 m-0 p-0 px-md-2 py-5">
+            <div class="col-9 col-sm-7 col-md-5 col-lg-4 col-xl-3 m-0 p-0 px-md-2 py-5">
                 <article class="card card-tour">
                     <img src="/img/city-tour-card-beverly-hills.jpg" alt="Shopping Center in Beverly Hills" class="img-fluid card-img-tour">
                     <div class="card-body">
                         <h3 class="card-title">Tons of Stops</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Cras justo odio</li>
@@ -253,9 +241,7 @@
                     <img src="/img/citytourbanner.jpg" alt="Downtown L.A. at Night" class="img-fluid card-img-tour">
                     <div class="card-body">
                         <h3 class="card-title">See the City</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Cras justo odio</li>
@@ -302,14 +288,14 @@
     <section class="gradient-background" id="celebHomesTour">
         <div class="container-fluid">
             <div class="row d-flex justify-content-center">
-                <div class="col-12 col-lg-8 text-center mt-2 pt-2 mb-0 pb-0 text-center">
-                    <div>
-                        <div class="tour-details-box celebrity-homes">
-                            <h2 class="display-4">Optional 2-Hour Celebrity Homes Tour</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo saepe quidem fugit earum, a nemo excepturi illum, consectetur natus beatae cum iste, fuga ratione possimus error labore deserunt nostrum!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit libero odio harum quidem praesentium ducimus quae minus quibusdam alias! At libero sit pariatur nobis error cupiditate, obcaecati voluptas.</p>
-                        </div>
-                    </div>
+                <div class="col-12 col-lg-8 text-center mt-2 pt-2 mb-0 pb-0 text-center celebrity-homes">
+                    <h2 class="display-4">Optional 2-Hour Celebrity Homes Tour</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo saepe quidem fugit earum, a nemo excepturi illum, consectetur natus beatae cum iste, fuga ratione possimus error labore deserunt nostrum!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit libero odio harum quidem praesentium ducimus quae minus quibusdam alias! At libero sit pariatur nobis error cupiditate, obcaecati voluptas.
+                    </p>
                 </div>
             </div>
         </div>
@@ -317,19 +303,15 @@
 
     <section class="container-fluid pt-5" id="stops">
         <div class="row d-flex justify-content-center">
-            <div class="col-11 col-sm-10 col-lg-8 text-center home-about mt-2 pt-2 mb-5 pb-5">
+            <div class="col-11 col-sm-10 col-lg-8 text-center text-detail mt-2 pt-2 mb-5 pb-5">
                 <h2 class="display-4">See Downtown L.A., Santa Monica, Beverly Hills, and More</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus odit itaque molestias
-                    aut
-                    omnis eaque quas sint nihil ab earum eligendi repellendus laboriosam velit repudiandae possimus
-                    libero
-                    magnam facilis suscipit accusamus, repellat magni. Aliquid facilis temporibus nobis repellat neque,
-                    harum aspernatur ea magnam, in sapiente rerum ex omnis? Reiciendis!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam doloremque in reprehenderit, saepe
-                    alias
-                    iure incidunt rem quaerat sint ab odio quia sequi dolor dicta, distinctio tempore vitae nisi a
-                    obcaecati
-                    nobis, labore omnis minima? Reprehenderit architecto quam eos eaque.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatibus odit itaque molestias aut omnis eaque quas sint nihil ab earum eligendi repellendus laboriosam velit repudiandae possimus libero magnam facilis suscipit accusamus, repellat magni. Aliquid facilis temporibus nobis repellat neque,
+                    harum aspernatur ea magnam, in sapiente rerum ex omnis? Reiciendis!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam doloremque in reprehenderit, saepe alias iure incidunt rem quaerat sint ab odio quia sequi dolor dicta, distinctio tempore vitae nisi a obcaecati nobis, labore omnis minima? Reprehenderit architecto quam eos eaque.
+                </p>
             </div>
         </div>
     </section>
@@ -338,6 +320,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-11 col-sm-9 col-lg-6 px-0">
                 <table class="table table-hover text-center">
+                    <caption>Table displaying price of tours based on number of passengers.</caption>
                     <thead>
                         <tr>
                             <th scope="col">Tour Package</th>
@@ -372,36 +355,23 @@
         </div>
     </section>
 
-    <div class="p-5"></div>
-
-    <section class="bus-background pt-5">
-        <div class="container-fluid">
-            <div class="row text-center p-0 p-lg-5 ">
-                <div class="col-11 col-md-8 col-lg-6 col-xl-4 mx-auto p-0">
-                </div>
-            </div>
-        </div>
-    </section>
-
 </main>
+
+    <div class="bus-background pt-5 mt-5"></div>
 
     <footer class="site-footer d-block">
         <div class="container-fluid">
             <div class="row px-0 pt-4 d-flex justify-content-center mx-0">
-                <div class="col-5 col-md-4">
-                    <div class="d-flex justify-content-start">
-                        <div class="text-left">
-                            <h2 class="footer-title pb-3">Links</h2>
-                            <ul class="list-unstyled footer-item">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="aboutus.html">About</a></li>
-                                <li><a href="citytour.html">City Tour</a></li>
-                                <li><a href="seasidetour.html">Seaside Tour</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="contactus.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-5 col-md-4 d-flex justify-content-start flex-column text-left">
+                    <h2 class="footer-title pb-3">Links</h2>
+                    <ul class="list-unstyled footer-item">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="citytour.html">City Tour</a></li>
+                        <li><a href="seasidetour.html">Seaside Tour</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
                 </div>
                 <div class="col-7 col-sm-5 px-0 mx-0 pr-3">
                     <div class="d-flex justify-content-end">
@@ -425,7 +395,7 @@
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-7">
-                    <hr class="">
+                    <hr />
                 </div>
             </div>
             <div class="row d-flex justify-content-center">

@@ -53,8 +53,8 @@
 </head>
 
     <nav class="container-fluid">
-        <div class="sticky-top">
-            <div class="row sticky-nav-dup p-auto d-flex justify-content-center" id="sticky-nav">
+        <div class='sticky-top'>
+            <div class="row sticky-nav p-auto d-flex justify-content-center" id="sticky-nav">
                 <div class="col-12 d-flex justify-content-end">
                     <div class="navbar navbar-expand-lg navbar-light pt-0">
                         <a class="navbar-brand align-self-start" href="index.html"><img
@@ -103,34 +103,31 @@
         </div>
     </nav>
 
-    <header class="jumbotron jumbotron-fluid jumbotron-citytour pt-0 mt-0 pr-0 mr-0 mt-0">
-        <div class="wrapper-1">
-            <div class="wrapper-2">
-                <div class="container-fluid">
-                    <div class="row mx-auto d-flex justify-content-center">
-                        <div class="col-12 mx-auto">
-                            <h1 class="jumbotron-title text-nowrap">F.A.Q.</h1>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="jumbotron-content">
+                <div class="row mx-auto d-flex justify-content-center">
+                    <div class="col-12 mx-auto">
+                        <h1 class="jumbotron-title text-nowrap">F.A.Q.</h1>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-11">
+                        <hr class="header-line">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-10 col-sm-8 col-xl-9 mb-xl-0">
+                        <div>
+                            <p class="text-center m-4 jumbotron-subtitle">Questions and Answers</p>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-11">
-                            <hr class="header-line">
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-10 col-sm-8 col-xl-9 mb-xl-0">
-                            <div>
-                                <p class="text-center m-4"> <span class="header-tour-descrip2">Questions and Answers</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
-                            <button type="button" class="btn btn-secondary btn-main" data-toggle="modal" data-target="#bookingModal">
-                                <a href="#" class="btn-text text-nowrap text-center">Reserve Now &rarr;</a>
-                            </button>
-                        </div>
-                        <p class="my-5"></p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
+                        <button type="button" class="btn btn-secondary btn-main" data-toggle="modal" data-target="#bookingModal">
+                            <a href="#" class="btn-text text-nowrap text-center">Reserve Now &rarr;</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -148,11 +145,9 @@
                     <div class="container-fluid">
                         <form>
                             <div class="row form-group">
-                                <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of
-                                    Passengers</label>
+                                <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of Passengers</label>
                                 <div class="col">
-                                    <input type="number" name="num-passengers"  class="form-control form-control-sm" id="num-passengers"
-                                        placeholder="">
+                                    <input type="number" name="num-passengers"  class="form-control form-control-sm" id="num-passengers">
                                 </div>
                             </div>
                             <div class="row form-group">
@@ -167,8 +162,7 @@
                                     <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn radio-btn-1 active text-nowrap">
                                             <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked>
-                                            City
-                                            Tour
+                                            City Tour
                                         </label>
                                         <label class="btn radio-btn-2 text-nowrap">
                                             <input type="radio" name="tourType" autocomplete="off" value="seasideTour">
@@ -189,9 +183,12 @@
                             </div>
                             <div class="row form-group pt-3">
                                 <div class="col">
-                                    <button type="submit" data-dismiss="modal"
-                                        class="btn-modal btn-modal-cancel">Cancel</button>
-                                    <button type="submit" class="btn-modal btn-modal-submit">Search</button>
+                                    <button type="submit" data-dismiss="modal" class="btn-modal btn-modal-cancel">
+                                        Cancel
+                                    </button>
+                                    <button type="submit" class="btn-modal btn-modal-submit">
+                                        Search
+                                    </button>
                                 </div>
                             </div>
                         </form>
@@ -208,7 +205,7 @@
             <section>
                 <div class="row">
                     <div class="col mb-0 pb-0">
-                        <h2 class="mb-3 about-text about-heading-text text-center">Tours Info</h2>
+                        <h2 class="mb-3 section-text section-heading text-center">Tours Info</h2>
                     </div>
                 </div>
                 <div class="row mb-5 mt-3 d-flex justify-content-center align-items-center">
@@ -218,7 +215,7 @@
                             alt="Venice Beach" />
                         </div>
                     </div>
-                    <div class="col-10 col-sm-11 col-md-7 about-text">
+                    <div class="col-10 col-sm-11 col-md-7 section-text">
                         <article class="faq-accordion-size">
                             <!-- Tours Info section -->
                             <div class="accordion" id="accordion1">
@@ -226,11 +223,14 @@
                                     <div role="tab" class="card-header">
                                         <h3>
                                             <a data-toggle="collapse" data-target="#q1">
-                                                What if I book a large group and we would like to swap out one stop with another?</a>
+                                                What if I book a large group and we would like to swap out one stop with another?
+                                            </a>
                                         </h3>
                                         <div class="collapse show" id="q1" data-parent="#accordion1">
                                             <div class="card-body">
-                                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odio sint atque! Molestias distinctio eaque necessitatibus illum, nemo totam quis quas, asperiores laudantium praesentium voluptas!
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odio sint atque! Molestias distinctio eaque necessitatibus illum, nemo totam quis quas, asperiores laudantium praesentium voluptas!
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -244,7 +244,9 @@
                                         </h3>
                                         <div class="collapse" id="q2" data-parent="#accordion1">
                                             <div class="card-body">
-                                                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere deserunt eum, magni tempora consequuntur blanditiis voluptatibus sit deleniti asperiores!</p>
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere deserunt eum, magni tempora consequuntur blanditiis voluptatibus sit deleniti asperiores!
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -258,7 +260,9 @@
                                         </h3>
                                         <div class="collapse" id="q3" data-parent="#accordion1">
                                             <div class="card-body">
-                                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste possimus sit, quas eum itaque.</p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iste possimus sit, quas eum itaque.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -271,11 +275,11 @@
             <section>
                 <div class="row">
                     <div class="col mb-0 pb-0">
-                        <h2 class="mb-3 about-text about-heading-text text-center">Boarding</h2>
+                        <h2 class="mb-3 section-text section-heading text-center">Boarding</h2>
                     </div>
                 </div>
                 <div class="row mb-5 mt-3 d-flex justify-content-center align-items-center">
-                    <div class="col-10 col-sm-11 col-md-7 about-text">
+                    <div class="col-10 col-sm-11 col-md-7 section-text">
                         <article class="faq-accordion-size">
                             <!-- Boarding section -->
                             <div class="accordion" id="accordion2">
@@ -287,7 +291,9 @@
                                         </h3>
                                         <div class="collapse show" id="qb1" data-parent="#accordion2">
                                             <div class="card-body">
-                                                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus reprehenderit veritatis eum, voluptatem deleniti suscipit labore voluptate? Laudantium, tempora.
+                                                <p>
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus reprehenderit veritatis eum, voluptatem deleniti suscipit labore voluptate? Laudantium, tempora.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -301,7 +307,9 @@
                                         </h3>
                                         <div class="collapse" id="qb2" data-parent="#accordion2">
                                             <div class="card-body">
-                                                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis cum at fugiat architecto voluptas similique officia, ab sed nisi soluta.</p>
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis cum at fugiat architecto voluptas similique officia, ab sed nisi soluta.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -315,7 +323,9 @@
                                         </h3>
                                         <div class="collapse" id="qb3" data-parent="#accordion2">
                                             <div class="card-body">
-                                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, eum. Delectus cupiditate excepturi aspernatur atque accusantium numquam?</p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, eum. Delectus cupiditate excepturi aspernatur atque accusantium numquam?
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -334,7 +344,7 @@
             <section>
                 <div class="row">
                     <div class="col mb-0 pb-0">
-                        <h2 class="mb-3 about-text about-heading-text text-center">Payment</h2>
+                        <h2 class="mb-3 section-text section-heading text-center">Payment</h2>
                     </div>
                 </div>
                 <div class="row mb-5 mt-3 d-flex justify-content-center align-items-center">
@@ -343,7 +353,7 @@
                             <img class="mr-3 faq-img" src="img/card-seaside.jpg" alt="Beach with Palm Trees" />
                         </div>
                     </div>
-                    <div class="col-10 col-sm-11 col-md-7 about-text">
+                    <div class="col-10 col-sm-11 col-md-7 section-text">
                         <article class="faq-accordion-size">    
                             <!-- payment section -->
                             <div class="accordion" id="accordion3">
@@ -351,11 +361,14 @@
                                     <div role="tab" class="card-header">
                                         <h3>
                                             <a data-toggle="collapse" data-target="#qp1">
-                                                Do we pay as a group or individually?</a>
+                                                Do we pay as a group or individually?
+                                            </a>
                                         </h3>
                                         <div class="collapse show" id="qp1" data-parent="#accordion3">
                                             <div class="card-body">
-                                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing.
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -369,7 +382,9 @@
                                         </h3>
                                         <div class="collapse" id="qp2" data-parent="#accordion3">
                                             <div class="card-body">
-                                                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, repudiandae.</p>
+                                                <p>
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, repudiandae.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -383,7 +398,9 @@
                                         </h3>
                                         <div class="collapse" id="qp3" data-parent="#accordion3">
                                             <div class="card-body">
-                                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae nesciunt, sit voluptatibus at in, mollitia modi dolor quia voluptatem, harum dolorum optio! Delectus eaque culpa beatae nisi!</p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quae nesciunt, sit voluptatibus at in, mollitia modi dolor quia voluptatem, harum dolorum optio! Delectus eaque culpa beatae nisi!
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -395,37 +412,24 @@
             </section>
         </div>
     </div>
-
-    <div class="p-5"></div>
-
-    <section class="bus-background pt-5">
-        <div class="container-fluid">
-            <div class="row text-center p-0 p-lg-5 ">
-                <div class="col-11 col-md-8 col-lg-6 col-xl-4 mx-auto p-0">
-                </div>
-            </div>
-        </div>
-    </section>
     
 </main>
+
+    <div class="bus-background pt-5 mt-5"></div>
 
     <footer class="site-footer d-block">
         <div class="container-fluid">
             <div class="row px-0 pt-4 d-flex justify-content-center mx-0">
-                <div class="col-5 col-md-4">
-                    <div class="d-flex justify-content-start">
-                        <div class="text-left">
-                            <h2 class="footer-title pb-3">Links</h2>
-                            <ul class="list-unstyled footer-item">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="aboutus.html">About</a></li>
-                                <li><a href="#">City Tour</a></li>
-                                <li><a href="seasidetour.html">Seaside Tour</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="contactus.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-5 col-md-4 d-flex justify-content-start flex-column text-left">
+                    <h2 class="footer-title pb-3">Links</h2>
+                    <ul class="list-unstyled footer-item">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">City Tour</a></li>
+                        <li><a href="seasidetour.html">Seaside Tour</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
                 </div>
                 <div class="col-7 col-sm-5 px-0 mx-0 pr-3">
                     <div class="d-flex justify-content-end">
@@ -449,7 +453,7 @@
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-7">
-                    <hr class="">
+                    <hr />
                 </div>
             </div>
             <div class="row d-flex justify-content-center">

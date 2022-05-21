@@ -58,7 +58,7 @@ table {
 	border-spacing: 0;
 }
 
-.sticky-nav-dup {
+.sticky-nav {
     height: 8vh;
     width: 100vw;
     background-color: transparent;
@@ -105,7 +105,7 @@ table {
 }
 
 @media only screen and (min-width: 992px) {
-    .sticky-nav-dup {
+    .sticky-nav {
         .navbar-collapse.show {
             a {
                 background-image: unset;
@@ -162,14 +162,16 @@ table {
     display: block; 
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    background-image: linear-gradient(to right, $gradient-light,
+    $gradient-light), url(/img/card-city.jpg);
 }
 
-.jumbotron-home {
-    background-image: linear-gradient(to right, $gradient-light, 
-$gradient-light), url(/img/downtownla.jpg);
-}
+// .jumbotron-home {
+//     background-image: linear-gradient(to right, $gradient-light, 
+// $gradient-light), url(/img/downtownla.jpg);
+// }
 
-.jumbotron-la {
+.jumbotron-title-subtext {
     align-self: center;
     font-family:  $font-roboto;
     color: $font-dark;
@@ -181,11 +183,6 @@ $gradient-light), url(/img/downtownla.jpg);
     display: inline-flex;
     align-items: center;
     vertical-align: middle;
-}
-
-.jumbotron-citytour {
-    background-image: linear-gradient(to right, $gradient-light, 
-$gradient-light), url(/img/card-city.jpg);
 }
 
 .navbar-icon-title {
@@ -221,12 +218,12 @@ $gradient-light), url(/img/card-city.jpg);
     text-shadow: 3px 3px $gradient-light;
 }
 
-.header-tour-descrip2 {
-    color: $font-dark;
-    font-weight: bold;
-    font-family: $font-lato;
-    text-shadow: white;
-}
+// .header-tour-descrip2 {
+//     color: $font-dark;
+//     font-weight: bold;
+//     font-family: $font-lato;
+//     text-shadow: white;
+// }
 
 .header-line {
     background-color: #e32727;
@@ -237,10 +234,11 @@ $gradient-light), url(/img/card-city.jpg);
     .jumbotron-title {
         font-size: 5.5rem;
     }
-    .header-tour-descrip2, .header-tour-descrip {
+    // .header-tour-descrip2, 
+    .jumbotron-subtitle {
         font-size: 2.3rem;
     }
-    .jumbotron-la {
+    .jumbotron-title-subtext {
         font-size: 1.6rem;
     }
 }
@@ -249,10 +247,11 @@ $gradient-light), url(/img/card-city.jpg);
     .jumbotron-title {
         font-size: 7rem;
     }
-    .header-tour-descrip2, .header-tour-descrip {
+    // .header-tour-descrip2, 
+    .jumbotron-subtitle {
         font-size: 2.7rem;
     }
-    .jumbotron-la {
+    .jumbotron-title-subtext {
         font-size: 2.8rem;
     }
 }
@@ -261,28 +260,26 @@ $gradient-light), url(/img/card-city.jpg);
     .jumbotron-title {
         font-size: 9rem;
     }
-    .header-tour-descrip2 {
-        font-size: 2.7rem;
-    }
-    .jumbotron-la {
+    // .header-tour-descrip2 {
+    //     font-size: 2.7rem;
+    // }
+    .jumbotron-title-subtext {
         font-size: 3.5rem;
     }
 }
 
-
-.wrapper-1 {
+.jumbotron-fluid .container-fluid {
     margin: 0;
     position: relative;
 }
 
-.wrapper-2 {
-    margin-top: 45vh;
+.jumbotron-content {
+    margin-top: 41vh;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-
 }
 
 .header-content {
@@ -465,25 +462,25 @@ input[type=checkbox]:checked + label {
     text-shadow: 1px 1px 1px rgba(245, 166, 166, 1);
 }
 
-.header-tour-descrip {
+.jumbotron-subtitle {
     color: $font-dark;
     font-weight: bold;
     font-family: $font-lato;
     text-shadow: white;
 }
 
-.home-about {
+.text-detail {
     font-size: $font-size-large-1;
     color: $font-dark;
     font-family: $font-roboto;
 }
 
-.home-about > p {
+.text-detail > p {
     margin: 5px;
     padding: 10px;
 }
 
-.home-about > h2 {
+.text-detail > h2 {
     padding: 10px;
     font-weight: bold;
 }
@@ -501,7 +498,7 @@ $gradient-light);
     padding: 0;
 }
 
-.home-img-about {
+.home-img-item {
     height: 60%;
     width: 100%;
     object-fit: cover;
@@ -515,7 +512,7 @@ $gradient-light);
     filter: opacity(85%);
 }
 
-.home-img-about:hover {
+.home-img-item:hover {
     transform: scale(1.20);
     filter: opacity(100%);
 }
@@ -524,15 +521,15 @@ $gradient-light);
     height: 200px;
 }
 
-.home-img-about--1 {
+.home-img-item--1 {
     margin: 60% -60% 0 0;
 }
 
-.home-img-about--2 {
+.home-img-item--2 {
     margin: 40% -40% 0 0;
 }
 
-.home-img-about--3 {
+.home-img-item--3 {
     margin: 0 0 0 0;
 }
 
@@ -622,8 +619,9 @@ $gradient-light);
     .celebrity-homes > p {
         font-size: $font-size-med-1;
     }
-    .celebrity-homes > h1 {
-        font-size: 3rem;
+    .celebrity-homes > h2 {
+        font-size: 2.5rem;
+        padding-bottom: 4px;
     }  
 }
 
@@ -633,7 +631,7 @@ $gradient-light);
         margin: 5px;
         padding: 10px;
     }
-    .celebrity-homes > h1 {
+    .celebrity-homes > h2 {
         font-size: 3.5rem;
         font-weight: 300;
         line-height: 1.2;
@@ -652,16 +650,8 @@ $gradient-light), url(/img/bus-large.png);
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
 }
 
-.carousel-box {
-    height: 100vh;
-    position: relative;    
-}
-
-.carousel-box-child {
+.carousel-wrapper {
     color: rgba(255, 255, 255, .95);
-    height: 43vh;
-    width: 30vw;
-    margin-top: 28vh;
     font-size: $font-size-med-1;
     background-color: rgba(86, 86, 86, .80);
     border: 2px solid gray;
@@ -669,7 +659,7 @@ $gradient-light), url(/img/bus-large.png);
     position: relative;
 }
 
-.carousel-box-child::after {
+.carousel-wrapper:after {
     content: '';
     height: 10vh;
     display: block;
@@ -682,18 +672,6 @@ $gradient-light), url(/img/bus-large.png);
     border-left: solid 2em rgba(86, 86, 86, .80);
     border-right: solid 2em transparent;
     border-bottom: solid 2em transparent;
-}
-
-.comment-box-countainer {
-    position: relative;
-}
-.comment-box {
-    position: absolute;              
-    margin-top: 20vh; 
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); 
 }
 
 .star {
@@ -763,9 +741,9 @@ footer a, .contact-links, .footer-item, .copyright {
     padding: 0;
 }
 
-.tour-details-box {
-    border-radius: 10px;
-}
+// .tour-details-box {
+//     border-radius: 10px;
+// }
 
 .table {
     box-shadow: 1rem 1rem 1rem rgba(26, 20, 35, .35);
@@ -815,31 +793,31 @@ thead {
     height: auto;
 }
 
-.about-text {
+.section-text {
     font-size: $font-size-small-1;
     color: $font-dark; 
     font-family: $font-roboto;
 }
 
-.about-heading-text {
+.section-heading {
     font-weight: bold;
     color:rgba(227, 39, 39, .70);
 }  
 
 @media only screen and (min-width: 320px) {
-    .about-text {
+    .section-text {
         font-size: $font-size-small-2;
     }
-    .about-heading-text {
+    .section-heading {
         font-size: $font-size-med-1;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .about-text {
+    .section-text {
         font-size: $font-size-med-1;
     }
-    .about-heading-text {
+    .section-heading {
         font-size: 2rem;
     }
 }

@@ -52,8 +52,8 @@
 </head>
 
     <nav class="container-fluid">
-        <div class="sticky-top">
-            <div class="row sticky-nav-dup p-auto d-flex justify-content-center" id="sticky-nav">
+        <div class='sticky-top'>
+            <div class="row sticky-nav p-auto d-flex justify-content-center" id="sticky-nav">
                 <div class="col-12 d-flex justify-content-end">
                     <div class="navbar navbar-expand-lg navbar-light pt-0">
                         <a class="navbar-brand align-self-start" href="index.html"><img
@@ -102,34 +102,29 @@
         </div>
     </nav>
 
-    <header class="jumbotron jumbotron-fluid jumbotron-citytour pt-0 mt-0 pr-0 mr-0 mt-0">
-        <div class="wrapper-1">
-            <div class="wrapper-2">
-                <div class="container-fluid">
-                    <div class="row mx-auto d-flex justify-content-center">
-                            <div class="col-12 mx-auto">
-                                <h1 class="jumbotron-title text-nowrap">About Us</h1>
-                            </div>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-11">
-                            <hr class="header-line">
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="jumbotron-content">
+                <div class="row mx-auto d-flex justify-content-center">
+                        <div class="col-12 mx-auto">
+                            <h1 class="jumbotron-title text-nowrap">About Us</h1>
                         </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-11">
+                        <hr class="header-line">
                     </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-10 col-sm-8 col-xl-9 mb-xl-0">
-                            <div>
-                                <p class="text-center m-4"> <span class="header-tour-descrip2">L.A. Based Bus Tour Company</span></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-10 col-sm-8 col-xl-9 mb-xl-0">
+                            <p class="text-center m-4 jumbotron-subtitle">L.A. Based Bus Tour Company</p>
                     </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
-                            <button type="button" class="btn btn-secondary btn-main" data-toggle="modal" data-target="#bookingModal">
-                                <a href="#" class="btn-text text-nowrap text-center">Reserve Now &rarr;</a>
-                            </button>
-                        </div>
-                        <p class="my-5"></p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col pt-4 mt-3 mt-xl-0 mx-auto text-center">
+                        <button type="button" class="btn btn-secondary btn-main" data-toggle="modal" data-target="#bookingModal">
+                            <a href="#" class="btn-text text-nowrap text-center">Reserve Now &rarr;</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -147,11 +142,9 @@
                     <div class="container-fluid">
                         <form>
                             <div class="row form-group">
-                                <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of
-                                    Passengers</label>
+                                <label for="num-passengers" class="col-12 col-sm-6 col-form-label modal-text pl-0">Number of Passengers</label>
                                 <div class="col">
-                                    <input type="number" name="num-passengers" class="form-control form-control-sm" id="num-passengers"
-                                        placeholder="">
+                                    <input type="number" name="num-passengers" class="form-control form-control-sm" id="num-passengers">
                                 </div>
                             </div>
                             <div class="row form-group">
@@ -166,8 +159,7 @@
                                     <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn radio-btn-1 active text-nowrap">
                                             <input type="radio" name="tourType" autocomplete="off" value="cityTour" checked>
-                                            City
-                                            Tour
+                                            City Tour
                                         </label>
                                         <label class="btn radio-btn-2 text-nowrap">
                                             <input type="radio" name="tourType" autocomplete="off" value="seasideTour">
@@ -180,17 +172,19 @@
                                 <label class="col-sm-6 col-form-label modal-text">Extras:</label>
                                 <div class="col-6 btn-group">
                                     <div class="input-group-text checkbox-container">
-                                        <input type="checkbox" aria-label="Checkbox for following text input"
-                                            name="celebTour" value="Yes">
+                                        <input type="checkbox" aria-label="Checkbox for following text input" name="celebTour" value="Yes">
                                         <label for="celebTour" class="pl-3">+ Celebrity Tour</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="row form-group pt-3">
                                 <div class="col">
-                                    <button type="submit" data-dismiss="modal"
-                                        class="btn-modal btn-modal-cancel">Cancel</button>
-                                    <button type="submit" class="btn-modal btn-modal-submit">Search</button>
+                                    <button type="submit" data-dismiss="modal" class="btn-modal btn-modal-cancel">
+                                        Cancel
+                                    </button>
+                                    <button type="submit" class="btn-modal btn-modal-submit">
+                                        Search 
+                                    </button>
                                 </div>
                             </div>
                         </form>
@@ -202,14 +196,15 @@
 
 <main>
     
-    <section class="container">
+    <section class="container mb-5 pb-5">
         <div class="row row-content align-items-center mb-5 mt-5">
             <div class="col">
-                <article class="media about-text">
+                <article class="media section-text">
                     <img class="mr-3 img-thumbnail media-img align-self-center" src="img/la-sky.jpg" alt="L.A. Sky" />
                     <div class="media-body align-self-center">
-                        <h2 class="mb-3 about-heading-text text-center">Our Company</h2>
-                        <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus molestias nihil rerum et ipsa, totam accusamus mollitia perferendis quod commodi quis ipsum distinctio! Velit, quis!
+                        <h2 class="mb-3 section-heading text-center">Our Company</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus molestias nihil rerum et ipsa, totam accusamus mollitia perferendis quod commodi quis ipsum distinctio! Velit, quis!
                         </p>
                     </div>
                 </article>
@@ -217,11 +212,11 @@
         </div>
         <div class="row row-content align-items-center mb-5 mt-5">
             <div class="col">
-                <article class="media about-text">
+                <article class="media section-text">
                     <div class="media-body align-self-center">
-                        <h2 class="mb-3 about-heading-text text-center">History</h2>
-                        <p class="text-right mr-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus molestias nihil rerum et
-                            ipsa, totam accusamus mollitia perferendis quod commodi quis ipsum distinctio! Velit!
+                        <h2 class="mb-3 section-heading text-center">History</h2>
+                        <p class="text-right mr-3">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus molestias nihil rerum et ipsa, totam accusamus mollitia perferendis quod commodi quis ipsum distinctio! Velit!
                         </p>
                     </div>
                     <img class="mr-3 img-thumbnail media-img align-self-center" src="img/hollywood-tower-cropped.jpg" alt="Hollywood Tower Hotel" />
@@ -230,13 +225,13 @@
         </div>
         <div class="row row-content align-items-center mb-5 mt-5">
             <div class="col">
-                <article class="media about-text">
+                <article class="media section-text">
                     <img class="mr-3 img-thumbnail media-img align-self-center" src="img/santa-monica-beach.jpg"
                         alt="Santa Monica Beach" />
                     <div class="media-body align-self-center">
-                        <h2 class="mb-3 about-heading-text text-center">Our Buses</h2>
-                        <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus molestias nihil rerum et
-                            ipsa, totam accusamus mollitia perferendis quod commodi quis ipsum distinctio! Velit, quis!
+                        <h2 class="mb-3 section-heading text-center">Our Buses</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus molestias nihil rerum et ipsa, totam accusamus mollitia perferendis quod commodi quis ipsum distinctio! Velit, quis!
                         </p>
                     </div>
                 </article>
@@ -244,36 +239,23 @@
         </div>
     </section>
 
-    <div class="p-5"></div>
-
-    <section class="bus-background pt-5">
-        <div class="container-fluid">
-            <div class="row text-center p-0 p-lg-5 ">
-                <div class="col-11 col-md-8 col-lg-6 col-xl-4 mx-auto p-0">
-                </div>
-            </div>
-        </div>
-    </section>
-
 </main>
+    
+    <div class="bus-background pt-5 mt-5"></div>
 
     <footer class="site-footer d-block">
         <div class="container-fluid">
             <div class="row px-0 pt-4 d-flex justify-content-center mx-0">
-                <div class="col-5 col-md-4">
-                    <div class="d-flex justify-content-start">
-                        <div class="text-left">
-                            <h2 class="footer-title pb-3">Links</h2>
-                            <ul class="list-unstyled footer-item">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="aboutus.html">About</a></li>
-                                <li><a href="citytour.html">City Tour</a></li>
-                                <li><a href="seasidetour.html">Seaside Tour</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="contactus.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-5 col-md-4 d-flex justify-content-start flex-column text-left">
+                    <h2 class="footer-title pb-3">Links</h2>
+                    <ul class="list-unstyled footer-item">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="citytour.html">City Tour</a></li>
+                        <li><a href="seasidetour.html">Seaside Tour</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
                 </div>
                 <div class="col-7 col-sm-5 px-0 mx-0 pr-3">
                     <div class="d-flex justify-content-end">
@@ -294,7 +276,7 @@
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-7">
-                    <hr class="">
+                    <hr />
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
