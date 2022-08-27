@@ -71,6 +71,5 @@ While implementing this project I ran into several challenges. To make the proje
 
 ## References:
 
--Advanced CSS and Sass: Flexbox, Grid, Animations and More! by Jonas Schmedtmann - https://www.udemy.com/course/advanced-css-and-sass/ 
-
+-Advanced CSS and Sass: Flexbox, Grid, Animations and More! by Jonas Schmedtmann - https://www.udemy.com/course/advanced-css-and-sass/ (Natours project - For the clip-path in the jumbotron and inspiration for the UI design.)
 -w3schools.com 
