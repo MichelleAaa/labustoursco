@@ -4,14 +4,11 @@ $font-roboto: 'Roboto', sans-serif;
 $font-lato: 'Lato', sans-serif;
 $font-otr: 'Over the Rainbow', cursive;
 $font-vajahday: "Vajahday Script", sans-serif;
-
 $font-size-small-0: 1.2rem;
 $font-size-small-1: 1.3rem;
 $font-size-small-2: 1.4rem;
-$font-size-med-1: 1.5rem;
 $font-size-med-1: 1.7rem;
 $font-size-large-1: 2rem;
-
 
 
 html, body, div, span, applet, object, iframe,
@@ -56,6 +53,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .sticky-nav {
@@ -544,8 +545,13 @@ $gradient-light);
     transform: scale(1.10);
 }
 
+.card-link:hover {
+    text-decoration: none;
+}
+
 .card-link-bottom {
-    height: 100%;
+    // height: 100%;
+    min-height: 78px;
 }
 
 .card-link-bottom a:hover {
@@ -598,6 +604,10 @@ $gradient-light);
 
 .card-tour:hover {
     transform: scale(1.05);
+}
+
+.card-title {
+    min-height: 48px;
 }
 
 .card-btn {
@@ -767,6 +777,9 @@ thead {
 @media only screen and (min-width: 320px) {
     tr {
         font-size: 1.1rem;
+    }
+    .table-th {
+        font-size: .9rem;
     }
     thead {
         font-size: $font-size-small-0;
@@ -945,6 +958,13 @@ thead {
 form {
     font-family: $font-roboto;
     font-size: $font-size-med-1;
+}
+
+.contact-form-text {
+    font-family: sans-serif;
+    font-size: $font-size-small-0;
+    color: rgb(105, 105, 105);
+    font-style: italic;
 }
 
 .contactus-img {
