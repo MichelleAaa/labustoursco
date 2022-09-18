@@ -54,9 +54,7 @@ html, body {
   .sticky-nav .navbar-collapse.collapsing {
     transition: height 0.0s ease; }
   .sticky-nav .navbar-collapse.show {
-    margin-top: 9px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 9px 0px 0px 0px;
     border: inherit;
     border-radius: 5px; }
     .sticky-nav .navbar-collapse.show .dropdown {
@@ -127,7 +125,6 @@ html, body {
 .jumbotron-title-subtext {
   align-self: center;
   font-family: "Roboto", sans-serif;
-  color: #565656;
   color: rgba(255, 255, 255, 0.99);
   text-shadow: 3px 3px rgba(227, 39, 39, 0.55);
   text-decoration: underline;
@@ -141,7 +138,6 @@ html, body {
   text-align: center;
   font-family: "Over the Rainbow", cursive;
   color: #565656;
-  text-shadow: 3px 3px rgba(255, 255, 255, 0.65);
   text-shadow: 3px 3px white;
   font-size: 2rem;
   display: inline-flex;
@@ -198,10 +194,10 @@ html, body {
 
 .jumbotron-content {
   margin-top: 41vh;
+  margin-right: -50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%); }
 
 .header-content {
@@ -235,10 +231,10 @@ html, body {
 .header-arrow-text {
   color: white;
   margin: 0;
+  margin-right: -50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%); }
 
 .header-arrow:hover .header-arrow-text {
@@ -246,11 +242,9 @@ html, body {
   text-decoration: none; }
 
 .btn-secondary {
-  font-family: 'Dancing Script';
   font-family: "Lato", sans-serif;
   font-weight: bold;
   background-image: linear-gradient(to right, rgba(227, 39, 39, 0.95), rgba(227, 39, 39, 0.75));
-  background-color: white;
   background-color: rgba(227, 39, 39, 0.95);
   border: 1px solid #565656;
   color: white; }
@@ -338,7 +332,6 @@ input[type=checkbox]:checked + label {
   text-shadow: 2px 1px 1px rgba(26, 20, 35, 0.75); }
 
 .btn-modal-cancel {
-  background: linear-gradient(to left, gray 50%, #565656 50%) right;
   background: linear-gradient(to left, gray 50%, #868585 50%) right;
   background-size: 220%; }
 
@@ -356,8 +349,7 @@ input[type=checkbox]:checked + label {
 .jumbotron-subtitle {
   color: #565656;
   font-weight: bold;
-  font-family: "Lato", sans-serif;
-  text-shadow: white; }
+  font-family: "Lato", sans-serif; }
 
 .text-detail {
   font-size: 2rem;
