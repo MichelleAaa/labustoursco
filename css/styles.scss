@@ -168,7 +168,7 @@ html, body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
     background-image: linear-gradient(to right, $gradient-light,
-    $gradient-light), url(/img/card-city.jpg);
+    $gradient-light), url(../img/card-city.jpg);
 }
 
 .jumbotron-title-subtext {
@@ -636,7 +636,7 @@ input[type=checkbox]:checked + label {
 
 .bus-background {
     background-image: linear-gradient(to right, $gradient-light, 
-$gradient-light), url(/img/bus-large.png);
+$gradient-light), url(../img/bus-large.png);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
