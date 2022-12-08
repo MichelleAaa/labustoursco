@@ -629,6 +629,11 @@ input[type=checkbox]:checked + label {
     font-family: $font-roboto;
 }
 
+.celebrity-homes-buffer {
+    height: 400px;
+    width: 100%;
+}
+
 @media only screen and (max-width: 399px) {
     .celebrity-homes>p {
         font-size: $font-size-small-2;
@@ -709,6 +714,15 @@ $gradient-light), url(../img/bus-large.png);
     font-size: 2.5rem;
 }
 
+@media only screen and (max-width: 449px) {
+    .testimonial-heading {
+        font-size: 1.7rem;
+    }
+    .p-1 {
+        font-size: 1.3rem;
+    }
+}
+
 .site-footer {
     background-image: linear-gradient(to right, rgba(236, 233, 231, .60), rgba(86, 86, 86, .30));
 }
@@ -758,7 +772,7 @@ footer a, .contact-links, .footer-item, .copyright {
     /* Created with https://www.css-gradient.com */
     background: rgba(100, 99, 102, 1.0);
     background: -webkit-linear-gradient(to bottom right, rgba(100, 99, 102, .80), rgba(233, 231, 231, .80));
-    background: -moz-linear-gradient(to bottom right, rgba(100, 99, 102, .80), rgba(233, 231, 231, .80));
+    background: f-moz-linear-gradient(to bottom right, rgba(100, 99, 102, .80), rgba(233, 231, 231, .80));
     background: linear-gradient(to bottom right, rgba(100, 99, 102, .30), rgba(233, 231, 231, .30));
     -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
     clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
