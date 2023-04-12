@@ -11,6 +11,7 @@ $font-roboto: 'Roboto', sans-serif;
 $font-lato: 'Lato', sans-serif;
 $font-otr: 'Over the Rainbow', cursive;
 $font-vajahday: "Vajahday Script", sans-serif;
+$font-eb-garamond: 'EB Garamond', serif;
 $font-size-small-0: 1.2rem;
 $font-size-small-1: 1.3rem;
 $font-size-small-2: 1.4rem;
@@ -160,6 +161,7 @@ html,
 body {
     width: 100%;
     overflow-x: hidden;
+    font-family: $font-roboto;
 }
 
 
@@ -169,6 +171,7 @@ body {
     background-color: transparent;
     padding-top: 4vh;
     position: fixed;
+    font-family: $font-eb-garamond;
 
     .navbar-collapse.collapsing {
         -webkit-transition: height 0.0s ease;
@@ -359,8 +362,8 @@ body {
 
 .jumbotron-subtitle {
     color: $font-dark;
-    font-weight: bold;
     font-family: $font-lato;
+    font-weight: 300;
     -moz-osx-font-smoothing: grayscale;
 }
 
@@ -488,7 +491,7 @@ body {
 
 .btn-secondary {
     font-family: $font-lato;
-    font-weight: bold;
+    font-weight: 300;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(227, 39, 39, .95)), to(rgba(227, 39, 39, .75)));
     background-image: -o-linear-gradient(left, rgba(227, 39, 39, .95), rgba(227, 39, 39, .75));
     background-image: linear-gradient(to right, rgba(227, 39, 39, .95), rgba(227, 39, 39, .75));
@@ -947,6 +950,7 @@ input[type=checkbox]:checked+label {
     color: gray;
     text-shadow: 1px 1px 1px $font-dark;
     font-family: $font-lato;
+    font-weight: 100;
 }
 
 footer li {

@@ -138,14 +138,16 @@ table {
 html,
 body {
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif; }
 
 .sticky-nav {
   height: 8vh;
   width: 100vw;
   background-color: transparent;
   padding-top: 4vh;
-  position: fixed; }
+  position: fixed;
+  font-family: "EB Garamond", serif; }
   .sticky-nav .navbar-collapse.collapsing {
     -webkit-transition: height 0.0s ease;
     -o-transition: height 0.0s ease;
@@ -300,8 +302,8 @@ body {
 
 .jumbotron-subtitle {
   color: #565656;
-  font-weight: bold;
   font-family: "Lato", sans-serif;
+  font-weight: 300;
   -moz-osx-font-smoothing: grayscale; }
 
 @media only screen and (max-width: 499px) {
@@ -397,7 +399,7 @@ body {
 
 .btn-secondary {
   font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-weight: 300;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(227, 39, 39, 0.95)), to(rgba(227, 39, 39, 0.75)));
   background-image: -o-linear-gradient(left, rgba(227, 39, 39, 0.95), rgba(227, 39, 39, 0.75));
   background-image: linear-gradient(to right, rgba(227, 39, 39, 0.95), rgba(227, 39, 39, 0.75));
@@ -773,7 +775,8 @@ input[type=checkbox]:checked + label {
 .footer-title {
   color: gray;
   text-shadow: 1px 1px 1px #565656;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  font-weight: 100; }
 
 footer li {
   padding: 2px;
